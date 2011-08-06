@@ -70,8 +70,16 @@ failureMessage = Titanium.UI.createAlertDialog({
 	message: 'Failure Message'
 });
 
-prepareGeo();
-
+if (!win.venueLong)
+{
+	prepareGeo();
+}
+else
+{
+	showMap();
+	
+	
+}
 //This function prepares geolocation within Knight Finder
 function prepareGeo() {
 showIndicator();
@@ -99,6 +107,8 @@ function showMap() {
 	});
 	
 	//Annotation click - show the clicked venue
+	if (!win.venueLong)
+	{
 	mapView.addEventListener('click',function(evt)
 			{
 				if (evt.clicksource == 'rightButton')
@@ -127,6 +137,24 @@ function showMap() {
 					Titanium.UI.currentTab.open(venueWin,{animated:true});
 				}
 			});
+	}
+	else
+	{
+		hideIndicator();
+	mapView.removeAllAnnotations();
+	mapView.addAnnotation(Titanium.Map.createAnnotation({
+			latitude:win.venueLat,
+			longitude:win.venueLong,
+			title:win.venueName,
+			pincolor:Titanium.Map.ANNOTATION_GREEN,
+			animate:true,
+			rightButton:Titanium.UI.iPhone.SystemButton.DISCLOSURE,
+			font: {
+				fontSize:10
+			},
+			myid:i // CUSTOM ATTRIBUTE THAT IS PASSED INTO EVENT OBJECTS
+		}));
+	}
 	
 	win.add(mapView);
 }

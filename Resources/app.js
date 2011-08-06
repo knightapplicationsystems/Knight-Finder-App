@@ -51,7 +51,7 @@ if (!Ti.Network.online) {
 	});
 	
 		var tab1 = Titanium.UI.createTab({
-		title:'Featured Events/Venues and vouchers',
+		title:'Vouchers and Featured',
 		window:summaryWin,
 		icon:'images/74-location.png'
 	});

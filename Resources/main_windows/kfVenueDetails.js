@@ -221,6 +221,8 @@ btnAddress = Titanium.UI.createButton({
 	}
 });
 
+
+
 btnWhatsOn = Titanium.UI.createButton({
 	title:'Whats On',
 	height:45,
@@ -254,6 +256,24 @@ viewHeader.add(lblVenueName,btnPhoneNumber,btnAddress,btnWhatsOn,btnDeals);
 //scrollView.add(viewHeader);
 win.add(viewHeader);
 
+btnAddress.addEventListener('click',function(e)
+{
+	var mapWin = Titanium.UI.createWindow({
+		url:'kfMaps.js'
+	});
+	var venueName = win.venueName;
+	var venueLat = win.venueLat;
+	var venueLong = win.venueLong;
+	
+	mapWin.venueLat = venueLat;
+	mapWin.venueLong = venueLong;
+	mapWin.venueName = venueName;
+	
+	Titanium.UI.currentTab.open(mapWin, {
+		animated:true
+	});
+});
+
 btnWhatsOn.addEventListener('click', function(e) {
 	var whatsOn = Titanium.UI.createWindow({
 		url:'kfEvents.js'
@@ -273,8 +293,10 @@ btnDeals.addEventListener('click', function(e) {
 		url:'kfDeals.js'
 	});
 	var venueName = win.venueName;
+	var venueID = win.venueID;
 
 	drinksDeals.venueName = venueName;
+	drinksDeals.venueID = venueID;
 
 	Titanium.UI.currentTab.open(drinksDeals, {
 		animated:true

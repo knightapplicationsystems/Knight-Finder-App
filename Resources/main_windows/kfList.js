@@ -16,6 +16,7 @@ var failureMessage;
 var initialGeoReceived = false;
 var btnViewMap;
 var viewMap;
+var reviewKF;
 //Table views use a data object
 var tableData = [];
 var tableDataRowIds = [];
@@ -36,40 +37,62 @@ var db;
 db = Titanium.Database.open('knightfinder');
 
 db.execute('CREATE TABLE IF NOT EXISTS dbVersion (versionID)');
-db.execute('CREATE TABLE IF NOT EXISTS review (response)');
-db.execute('CREATE TABLE IF NOT EXISTS vouchers (voucherID, details, summary, date_added, expiry_date, venueID)');
+db.execute('CREATE TABLE IF NOT EXISTS review (response,count)');
+db.execute('CREATE TABLE IF NOT EXISTS vouchers (voucherID, details, summary, date_added, expiry_date, venueID,venueName)');
 
-db.execute("INSERT INTO review (response) VALUES ('yes')");
+
 
 
 function willYouReview()
 {
 	var rows = db.execute('SELECT * FROM review');
 	Titanium.API.info(rows.field(0));
-	if (rows.field(0) == 'yes')
+	if (rows.field(1) == null)
 	{
-		var reviewKF = Titanium.UI.createAlertDialog({
-	title: 'Knight Finder',
-	message: 'Do you like Knight Finder? Then please add a review and help us improve the app further',
-	buttonNames: ['Review Now', 'Never']
-	});
-	reviewKF.show();
+		db.execute("INSERT INTO review (response,count) VALUES ('yes',1)");
 	}
-	reviewKF.addEventListener('click',function (e)
+	Ti.API.info('what' + rows.field(1));
+	
+	if (rows.field(1) == '1')
 	{
-		if (e.index == 0)
-		{
-			 Titanium.Platform.openURL('http://itunes.apple.com/gb/app/knight-finder/id408243712?mt=8');
+		var countUpdate = rows.field(1);
+		countUpdate = countUpdate + 1;
+		db.execute('UPDATE review SET count = ' + countUpdate)
+		Ti.API.info('This should fire when new only' +countUpdate);
+	}
+	else
+	{
+		var countUpdate = rows.field(1);
+		countUpdate = countUpdate + 1;
+		db.execute('UPDATE review SET count = ' + countUpdate)
+		Ti.API.info(countUpdate);
+	}
+	
+	if (rows.field(1) == '5')
+	{
+		reviewKF = Titanium.UI.createAlertDialog({
+		title: 'Knight Finder',
+		message: 'Do you like Knight Finder? Then please add a review and help us improve the app further',
+		buttonNames: ['Review Now', 'Never']
+		});
+		reviewKF.show();
+	
+		reviewKF.addEventListener('click',function (e)
+			{
+				if (e.index == 0)
+				{
+					 Titanium.Platform.openURL('http://itunes.apple.com/gb/app/knight-finder/id408243712?mt=8');
+				}
+				else
+				{
+					db.execute("UPDATE review SET response = 'no'");
+				}
+			});
 		}
-		else
-		{
-			db.execute("UPDATE review SET response = 'no'");
-		}
-	});
 
 }
 
-
+willYouReview();
 
 //These are functions for the cool activity indicator 
 function showIndicator()
@@ -138,7 +161,7 @@ failureMessage = Titanium.UI.createAlertDialog({
 });
 
 
-prepareGeo();
+//prepareGeo();
 
 
 //This function prepares geolocation within Knight Finder
@@ -151,35 +174,38 @@ function prepareGeo() {
 	Titanium.Geolocation.addEventListener('location', geoResp);
 }
 
-
+geoResp();
 //Function is executed when succesful geo reponse comes back
 function geoResp(e) {
 	
-	Ti.API.info('GeoLocation Response received');
+	//Ti.API.info('GeoLocation Response received');
 
-	if (!e.success) {
-		failureMessage.message = "An Error has occured whilst trying to determine your location, please try and refresh, and make sure you have sufficient mobile signal";
-		failureMessage.show();
-		return;
-	}
+	//if (!e.success) {
+	//	failureMessage.message = "An Error has occured whilst trying to determine your location, please try and refresh, and make sure you have sufficient mobile signal";
+	//	failureMessage.show();
+	//	return;
+	//}
 
-	Ti.API.info("Geo Success");
+	//Ti.API.info("Geo Success");
 
 	// Set the global long/lat
-	geoLong = e.coords.longitude;
-	geoLat = e.coords.latitude;
+	//geoLong = e.coords.longitude;
+	//geoLat = e.coords.latitude;
+	geoLong = -0.0244;
+	geoLat = 50.80650;
+
 
 	// Show the map, as we now have lat/long
-	if (!initialGeoReceived) {
+	//if (!initialGeoReceived) {
 		
-	}
+	//}
 	//Keep trying to get a location
-	if (initialGeoReceived) {
-		Titanium.Geolocation.removeEventListener('location',geoResp);
-		return;
-	}
+	//if (initialGeoReceived) {
+	//	Titanium.Geolocation.removeEventListener('location',geoResp);
+	//	return;
+	//}
 
-	initialGeoReceived = true;
+	//initialGeoReceived = true;
 
 
 		url = env + "/api/venues?loc=" + geoLat + "," + geoLong + "&limit=" + 50;
@@ -288,6 +314,8 @@ function serviceResponse() {
 					var venuePhone = venues[e.index].venue.phone;
 					var venueEmail = venues[e.index].venue.email;
 					var venueID = venues[e.index].venue.id
+					var venueLong = venues[e.index].venue.longitude;
+					var venueLat = venues[e.index].venue.latitude;
 					
 					venueDetails.venueName = venueName;
 					venueDetails.venueAddress1 = venueAddress1;
@@ -296,13 +324,16 @@ function serviceResponse() {
 					venueDetails.venuePhone = venuePhone;
 					venueDetails.venueEmail = venueEmail;
 					venueDetails.venueID = venueID;
+					venueDetails.venueLong = venueLong;
+					venueDetails.venueLat = venueLat;
+					
 				Titanium.UI.currentTab.open(venueDetails,{animated:true});
 			});
 		
 		
 	}
 	hideIndicator();
-	willYouReview();
+	
 }
 
 
