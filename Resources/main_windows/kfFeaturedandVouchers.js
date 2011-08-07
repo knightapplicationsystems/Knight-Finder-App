@@ -9,7 +9,7 @@ var rowVouchers;
 var lblNoVouchers;
 var row;
 var tableData = [];
-var tableDataRowIds = [];
+var voucherIdRowData = [];
 var tableview;
 var alertMessage;
 var voucherIDfield;
@@ -55,6 +55,7 @@ function reloadThings() {
 		win.add(lblNoVouchers);
 	} else {
 		var i = 0;
+		
 
 		while (rowVouchers.isValidRow()) {
 			row = Ti.UI.createTableViewRow({
@@ -76,22 +77,10 @@ function reloadThings() {
 				}
 			});
 			
-			var voucherIDfield = Ti.UI.createLabel({
-				text: rowVouchers.field(0),
-				color: '#3D3D3D',
-				textAlign:'left',
-				left:10,
-				height:'auto',
-				font: {
-					fontWeight:'bold',
-					fontSize:13
-				}
-			});
 
 			row.add(voucherName);
-			row.add(voucherIDfield);
-			voucherIDfield.visible = false;
 
+			voucherIdRowData[i] = rowVouchers.field(0);
 			tableData[i] = row;
 
 			rowVouchers.next();
@@ -122,7 +111,7 @@ function reloadThings() {
 						});
 
 					var voucherType = 'Saved Venue Deal';
-					var voucherID =  voucherIDfield[i].text;
+					var voucherID =  voucherIdRowData[e.index];
 
 					
 					voucherWin.voucherID = voucherID;
