@@ -17,6 +17,7 @@ var initialGeoReceived = false;
 var btnViewMap;
 var viewMap;
 var reviewKF;
+var tableview;
 //Table views use a data object
 var tableData = [];
 var lastRow = 10;
@@ -232,7 +233,8 @@ function serviceResponse() {
 	try {
 		Ti.API.info("JSON parse ok");
 		venues = JSON.parse(this.responseText);
-	} catch (e) {
+	} 
+	catch (e) {
 		hideIndicator();
 		Ti.API.info("JSON parse failed");
 		failureMessage.message = "Fatal error, please close the application and try again later";
@@ -252,10 +254,120 @@ function serviceResponse() {
 	for (var i in venues) {
 		Ti.API.info("Parsing Venue");
 		
-		if (i > lastRow) {
+		if (i > lastRow)
 			break;
-		}
 
+		row = Ti.UI.createTableViewRow({
+			height:35,
+			backgroundColor:'#FFFFFF',
+			selectedBackgroundColor:'#dddddd'
+		});
+
+		var venueName = Ti.UI.createLabel({
+			text: venues[i].venue.name,
+			color: '#000000',
+			textAlign:'left',
+			left:10,
+			top:2,
+			height:18,
+			font: {
+				fontWeight:'bold',
+				fontSize:13
+			}
+		});
+		
+		Ti.API.info(venues[i].venue.name);
+		row.add(venueName);
+
+		tableData[i] = row;
+	}
+
+	 tableview = Titanium.UI.createTableView({
+		data:tableData,
+		style:Titanium.UI.iPhone.TableViewStyle.GROUPED,
+		headerTitle:'Venues Near You'
+	});
+
+	
+
+	tableview.addEventListener('scroll', function(e) {
+		var offset = e.contentOffset.y;
+		var height = e.size.height;
+		var total = offset + height;
+		var theEnd = e.contentSize.height;
+		var distance = theEnd - total;
+
+		// going down is the only time we dynamically load,
+		// going up we can safely ignore -- note here that
+		// the values will be negative so we do the opposite
+		if (distance < lastDistance) {
+			// adjust the % of rows scrolled before we decide to start fetching
+			var nearEnd = theEnd * .75;
+
+			if (!updating && (total >= nearEnd)) {
+				beginUpdate();
+			}
+		}
+		
+		lastDistance = distance;
+	});
+	
+	tableview.addEventListener('click', function(e) {
+		var index = e.index;
+		var section = e.section;
+		var row = e.row;
+		var rowdata = e.rowData;
+
+		var venueDetails = Titanium.UI.createWindow({
+			url:'kfVenueDetails.js'
+		});
+		var venueName = venues[e.index].venue.name;
+		var venueAddress1 = venues[e.index].venue.address1;
+		var venueCity = venues[e.index].venue.city;
+		var venuePostCode = venues[e.index].venue.postcode;
+		var venuePhone = venues[e.index].venue.phone;
+		var venueEmail = venues[e.index].venue.email;
+		var venueID = venues[e.index].venue.id
+		var venueLong = venues[e.index].venue.longitude;
+		var venueLat = venues[e.index].venue.latitude;
+
+		venueDetails.venueName = venueName;
+		venueDetails.venueAddress1 = venueAddress1;
+		venueDetails.venueCity = venueCity;
+		venueDetails.venuePostCode = venuePostCode;
+		venueDetails.venuePhone = venuePhone;
+		venueDetails.venueEmail = venueEmail;
+		venueDetails.venueID = venueID;
+		venueDetails.venueLong = venueLong;
+		venueDetails.venueLat = venueLat;
+
+		Titanium.UI.currentTab.open(venueDetails, {
+			animated:true
+		});
+	});
+	
+	Titanium.UI.currentWindow.add(tableview);
+	
+	hideIndicator();
+}
+
+function beginUpdate() {
+	Ti.API.info('I am updating the row');
+	updating = true;
+	navActInd.show();
+
+
+	// just mock out the reload
+	setTimeout(endUpdate,2000);
+}
+
+function endUpdate() {
+	updating = false;
+
+
+
+	// simulate loading
+	for (var i=lastRow;i<lastRow+10;i++) {
 		row = Ti.UI.createTableViewRow({
 			height:35,
 			backgroundColor:'#FFFFFF',
@@ -278,128 +390,17 @@ function serviceResponse() {
 		row.add(venueName);
 
 		tableData[i] = row;
-
-		var tableview = Titanium.UI.createTableView({
-			data:tableData,
-			style:Titanium.UI.iPhone.TableViewStyle.GROUPED,
-			headerTitle:'Venues Near You'
-		});
-
-		Titanium.UI.currentWindow.add(tableview);
-
-		tableview.addEventListener('scroll', function(e) {
-			var offset = e.contentOffset.y;
-			var height = e.size.height;
-			var total = offset + height;
-			var theEnd = e.contentSize.height;
-			var distance = theEnd - total;
-
-			// going down is the only time we dynamically load,
-			// going up we can safely ignore -- note here that
-			// the values will be negative so we do the opposite
-			if (distance < lastDistance) {
-				// adjust the % of rows scrolled before we decide to start fetching
-				var nearEnd = theEnd * .75;
-
-				if (!updating && (total >= nearEnd)) {
-					beginUpdate();
-				}
-			}
-			lastDistance = distance;
-		});
-		tableview.addEventListener('click', function(e) {
-			var index = e.index;
-			var section = e.section;
-			var row = e.row;
-			var rowdata = e.rowData;
-
-			var venueDetails = Titanium.UI.createWindow({
-				url:'kfVenueDetails.js'
-			});
-			var venueName = venues[e.index].venue.name;
-			var venueAddress1 = venues[e.index].venue.address1;
-			var venueCity = venues[e.index].venue.city;
-			var venuePostCode = venues[e.index].venue.postcode;
-			var venuePhone = venues[e.index].venue.phone;
-			var venueEmail = venues[e.index].venue.email;
-			var venueID = venues[e.index].venue.id
-			var venueLong = venues[e.index].venue.longitude;
-			var venueLat = venues[e.index].venue.latitude;
-
-			venueDetails.venueName = venueName;
-			venueDetails.venueAddress1 = venueAddress1;
-			venueDetails.venueCity = venueCity;
-			venueDetails.venuePostCode = venuePostCode;
-			venueDetails.venuePhone = venuePhone;
-			venueDetails.venueEmail = venueEmail;
-			venueDetails.venueID = venueID;
-			venueDetails.venueLong = venueLong;
-			venueDetails.venueLat = venueLat;
-
-			Titanium.UI.currentTab.open(venueDetails, {
-				animated:true
-			});
-		});
 		
-	function beginUpdate() {
-		updating = true;
-		navActInd.show();
-
-		tableview.appendRow(loadingRow);
-
-		// just mock out the reload
-		setTimeout(endUpdate,2000);
+		tableview.appendRow(row);
 	}
+	
+	lastRow += 10;
 
-	function endUpdate() {
-		updating = false;
-
-		tableview.deleteRow(lastRow, {
-			animationStyle:Titanium.UI.iPhone.RowAnimationStyle.NONE
-		});
-
-		// simulate loading
-		for (var i=lastRow;i<lastRow+10;i++) {
-			row = Ti.UI.createTableViewRow({
-				height:35,
-				backgroundColor:'#FFFFFF',
-				selectedBackgroundColor:'#dddddd'
-			});
-
-			var venueName = Ti.UI.createLabel({
-				text: venues[i].venue.name,
-				color: '#000000',
-				textAlign:'left',
-				left:10,
-				top:2,
-				height:18,
-				font: {
-					fontWeight:'bold',
-					fontSize:13
-				}
-			});
-			Ti.API.info(venues[i].venue.name);
-			row.add(venueName);
-
-			tableData[i] = row;
-			
-			tableview.appendRow(row);
-		}
-		
-		lastRow += 10;
-
-		// just scroll down a bit to the new rows to bring them into view
-		tableview.scrollToIndex(lastRow-9, {
-			animated:true,
-			position:Ti.UI.iPhone.TableViewScrollPosition.BOTTOM
-		});
-		
-		
-
-		navActInd.hide();
-		}
-	}
-	hideIndicator();
-
-
+	// just scroll down a bit to the new rows to bring them into view
+	tableview.scrollToIndex(lastRow-9, {
+		animated:true,
+		position:Ti.UI.iPhone.TableViewScrollPosition.BOTTOM
+	});
+	
+	navActInd.hide();
 }
