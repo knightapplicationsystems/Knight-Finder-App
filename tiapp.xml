@@ -7,7 +7,7 @@
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <id>com.knightfinderapp.com</id>
+    <id>com.knightfinderapp</id>
     <name>KnightFinder</name>
     <version>3.1</version>
     <publisher>Knight Application Systems</publisher>

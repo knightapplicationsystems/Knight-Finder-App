@@ -2,7 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
-<key>get-task-allow</key>
-		<true/>
+
+		<key>application-identifier</key>
+		<string>2GWNG6WJ9P.com.knightfinderapp</string>
+		<key>get-task-allow</key>
+		<false/>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>2GWNG6WJ9P.com.knightfinderapp</string>
+		</array>
+		
 	</dict>
 </plist>

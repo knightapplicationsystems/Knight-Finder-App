@@ -1,6 +1,10 @@
-#Sat Jul 09 15:23:23 BST 2011
+#Sat Aug 27 18:42:33 BST 2011
 eclipse.preferences.version=1
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/appid=*
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/filepath=/Users/thesargenator/Downloads/Team_Provisioning_Profile_ (1).mobileprovision
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/name=Team Provisioning Profile\: *
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/uuid=71744FE1-3E38-483D-A852-C12963636AE8
+provisioning_profiles/distribution/C9C32B07-5C50-4116-B1FD-B0AE47A20930/appid=com.knightfinderapp
+provisioning_profiles/distribution/C9C32B07-5C50-4116-B1FD-B0AE47A20930/filepath=/Users/thesargenator/Downloads/Knight_Finder_Beta1 (4).mobileprovision
+provisioning_profiles/distribution/C9C32B07-5C50-4116-B1FD-B0AE47A20930/name=Knight Finder Beta1
+provisioning_profiles/distribution/C9C32B07-5C50-4116-B1FD-B0AE47A20930/uuid=C9C32B07-5C50-4116-B1FD-B0AE47A20930
