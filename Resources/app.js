@@ -53,7 +53,7 @@ if (!Ti.Network.online) {
 		var tab1 = Titanium.UI.createTab({
 		title:'Vouchers and Featured',
 		window:summaryWin,
-		icon:'images/74-location.png'
+		icon:'images/53-house.png'
 	});
 	
 
