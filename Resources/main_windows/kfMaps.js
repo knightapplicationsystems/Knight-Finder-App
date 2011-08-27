@@ -16,7 +16,7 @@ var geoLat;
 var env = "http://knightfinder.heroku.com";
 var initialResultsReceived = false;
 var actInd;
-var activityWindow
+var activityWindow;
 var activityBg;
 
 //Window Loading section
@@ -140,8 +140,10 @@ function showMap() {
 	}
 	else
 	{
-		hideIndicator();
+		//hideIndicator();
 	mapView.removeAllAnnotations();
+	mapView.region.latitudeDelta = 0.04;
+	mapView.region.longitudeDelta = 0.04;
 	mapView.addAnnotation(Titanium.Map.createAnnotation({
 			latitude:win.venueLat,
 			longitude:win.venueLong,
@@ -151,9 +153,16 @@ function showMap() {
 			rightButton:Titanium.UI.iPhone.SystemButton.DISCLOSURE,
 			font: {
 				fontSize:10
-			},
-			myid:i // CUSTOM ATTRIBUTE THAT IS PASSED INTO EVENT OBJECTS
+			}
+			
 		}));
+			mapView.addEventListener('click',function(evt)
+			{
+				if (evt.clicksource == 'rightButton')
+				{
+					win.close();
+				}
+			});
 	}
 	
 	win.add(mapView);

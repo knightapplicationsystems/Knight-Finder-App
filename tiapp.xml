@@ -9,7 +9,7 @@
     </deployment-targets>
     <id>com.knightfinderapp.com</id>
     <name>KnightFinder</name>
-    <version>1.0</version>
+    <version>3.1</version>
     <publisher>Knight Application Systems</publisher>
     <url>http://www.knightfinderapp.com</url>
     <description>Knight Finder for Android and iPhone</description>

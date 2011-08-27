@@ -20,7 +20,7 @@ var reviewKF;
 var tableview;
 //Table views use a data object
 var tableData = [];
-var lastRow = 10;
+var lastRow = 9;
 var tableDataRowIds = [];
 var row;
 var singleVenue;
@@ -28,11 +28,9 @@ var actInd;
 var activityWindow
 var activityBg;
 var updating = false;
-var loadingRow = Ti.UI.createTableViewRow({
-	title:"Scroll down to load more...",
-	height:35
-});
-var lastDistance = 0;
+lastDistance = 0;
+
+
 //Window Loading section
 win = Titanium.UI.currentWindow;
 win.title = appTitle;
@@ -153,7 +151,7 @@ failureMessage = Titanium.UI.createAlertDialog({
 	message: 'Failure Message'
 });
 
-//prepareGeo();
+prepareGeo();
 
 //This function prepares geolocation within Knight Finder
 function prepareGeo() {
@@ -165,37 +163,42 @@ function prepareGeo() {
 	Titanium.Geolocation.addEventListener('location', geoResp);
 }
 
-geoResp();
+//geoResp();
 //Function is executed when succesful geo reponse comes back
 function geoResp(e) {
 
-	//Ti.API.info('GeoLocation Response received');
+	Ti.API.info('GeoLocation Response received');
 
-	//if (!e.success) {
-	//	failureMessage.message = "An Error has occured whilst trying to determine your location, please try and refresh, and make sure you have sufficient mobile signal";
-	//	failureMessage.show();
-	//	return;
-	//}
+	if (!e.success) {
+		failureMessage.message = "An Error has occured whilst trying to determine your location, please try and refresh, and make sure you have sufficient mobile signal";
+		failureMessage.show();
+		return;
+	}
 
-	//Ti.API.info("Geo Success");
+	Ti.API.info("Geo Success");
 
 	// Set the global long/lat
-	//geoLong = e.coords.longitude;
-	//geoLat = e.coords.latitude;
-	geoLong = -0.0244;
-	geoLat = 50.80650;
+	geoLong = e.coords.longitude;
+	geoLat = e.coords.latitude;
+	//geoLong = -0.0244;
+	//geoLat = 50.80650;
+	//geoLong = -0.142;
+	//geoLat = 51.4671;
+	
+	
+
 
 	// Show the map, as we now have lat/long
 	//if (!initialGeoReceived) {
 
 	//}
 	//Keep trying to get a location
-	//if (initialGeoReceived) {
-	//	Titanium.Geolocation.removeEventListener('location',geoResp);
-	//	return;
-	//}
+	if (initialGeoReceived) {
+		Titanium.Geolocation.removeEventListener('location',geoResp);
+		return;
+	}
 
-	//initialGeoReceived = true;
+	initialGeoReceived = true;
 
 	url = env + "/api/venues?loc=" + geoLat + "," + geoLong + "&limit=" + 50;
 	Ti.API.info(url);
@@ -254,8 +257,9 @@ function serviceResponse() {
 	for (var i in venues) {
 		Ti.API.info("Parsing Venue");
 		
-		if (i > lastRow)
+		if (i > lastRow) { 
 			break;
+		}
 
 		row = Ti.UI.createTableViewRow({
 			height:35,
@@ -302,7 +306,7 @@ function serviceResponse() {
 		// the values will be negative so we do the opposite
 		if (distance < lastDistance) {
 			// adjust the % of rows scrolled before we decide to start fetching
-			var nearEnd = theEnd * .75;
+			var nearEnd = theEnd;
 
 			if (!updating && (total >= nearEnd)) {
 				beginUpdate();
@@ -353,54 +357,61 @@ function serviceResponse() {
 
 function beginUpdate() {
 	Ti.API.info('I am updating the row');
-	updating = true;
-	navActInd.show();
+	Ti.API.warn(tableview.data.rowCount);
 
-
-	// just mock out the reload
-	setTimeout(endUpdate,2000);
+	endUpdate();
 }
 
 function endUpdate() {
-	updating = false;
-
-
-
-	// simulate loading
-	for (var i=lastRow;i<lastRow+10;i++) {
-		row = Ti.UI.createTableViewRow({
-			height:35,
-			backgroundColor:'#FFFFFF',
-			selectedBackgroundColor:'#dddddd'
-		});
-
-		var venueName = Ti.UI.createLabel({
-			text: venues[i].venue.name,
-			color: '#000000',
-			textAlign:'left',
-			left:10,
-			top:2,
-			height:18,
-			font: {
-				fontWeight:'bold',
-				fontSize:13
-			}
-		});
-		Ti.API.info(venues[i].venue.name);
-		row.add(venueName);
-
-		tableData[i] = row;
+	//updating = false;
+	var newRows =[];
+	var rowToDelete = lastRow + 1;
+	
+	// With 34 items, After 2 swipes lastRow will be 29, 30 rows will be displayed.
+	// We need to append rows 30, 31, 32 and 33.
+	
+	for (var i=lastRow+1;i<=lastRow+10;i++) {
 		
-		tableview.appendRow(row);
+		if (i < venues.length) {
+			row = Ti.UI.createTableViewRow({
+				height:35,
+				backgroundColor:'#FFFFFF',
+				selectedBackgroundColor:'#dddddd'
+			});
+	
+			var venueName = Ti.UI.createLabel({
+				text: venues[i].venue.name,
+				color: '#000000',
+				textAlign:'left',
+				left:10,
+				top:2,
+				height:18,
+				font: {
+					fontWeight:'bold',
+					fontSize:13
+				}
+			});
+			Ti.API.info(venues[i].venue.name);
+			row.add(venueName);
+			
+			//Populate newRows array with the rows from the latest update.
+			newRows[i-lastRow-1] = row;
+			
+			//tableview.appendRow(row);
+		} else {
+			Ti.API.warn('No more records. i is ' + i)
+		}
 	}
 	
-	lastRow += 10;
-
-	// just scroll down a bit to the new rows to bring them into view
-	tableview.scrollToIndex(lastRow-9, {
-		animated:true,
-		position:Ti.UI.iPhone.TableViewScrollPosition.BOTTOM
-	});
+	// Append rows in newRows to tableview
+	for (var i=0; i < newRows.length; i++) {
+	  tableview.appendRow(newRows[i]);
+	};
 	
-	navActInd.hide();
+	//Increment lastRow only if we're not near to the end of the list of venues.
+	if (lastRow < venues.length) {
+		lastRow += 10;
+	}
+	
+	
 }
