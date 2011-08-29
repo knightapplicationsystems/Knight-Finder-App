@@ -18,6 +18,9 @@ var btnViewMap;
 var viewMap;
 var reviewKF;
 var tableview;
+var tryonce = false;
+var trytwice = false;
+var tryfinal = false;
 //Table views use a data object
 var tableData = [];
 var lastRow = 9;
@@ -207,6 +210,7 @@ function geoResp(e) {
 }
 
 function callService() {
+	
 
 	// Call the webservice using a web request
 	var xhr = Titanium.Network.createHTTPClient();
@@ -215,7 +219,24 @@ function callService() {
 
 	xhr.onerror = function() {
 		hideIndicator();
-		callService();
+		tryonce = true;
+		if (tryonce = true)
+		{
+			callService();
+			trytwice = true;
+		}
+		if (trytwice = true)
+		{
+			callService();
+			tryfinal = true;
+		}
+		if (tryfinal = true)
+		{
+			failureMessage.message = "Unable to connect to Webservice, Please close Knight Finder and ensure you have a Minimum of an Edge network";
+			failureMessage.show();
+			return;
+		}
+		
 		showIndicator();
 		Ti.API.info("Error in webserver");
 
