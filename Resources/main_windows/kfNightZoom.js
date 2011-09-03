@@ -164,7 +164,7 @@ function eventsResponse() {
 	});
 
 	btnAddToGuestList = Titanium.UI.createButtonBar({
-		top:10,
+		top:20,
 		right:10,
 		width:160,
 		height:40,

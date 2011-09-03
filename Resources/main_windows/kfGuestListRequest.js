@@ -30,20 +30,20 @@ lblNames = Ti.UI.createLabel({
 	text: 'Add Names below:',
 	color: 'Black',
 	textAlign:'left',
-	left:10,
-	top:50,
+	left:180,
+	top:16,
 	height:'auto',
 	font: {
 		fontWeight:'bold',
-		fontSize:13
+		fontSize:14
 	}
 });
 
 txtNames = Ti.UI.createTextArea({
-	height:100,
-	top:90,
+	height:110,
+	top:50,
 	left:10,
-	width:200,
+	width:300,
 	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
 	font: {
 		fontSize:15,
@@ -60,10 +60,10 @@ txtNames.addEventListener('focus', function(e) {
 	btnDone.visible = true;
 });
 btnDone = Titanium.UI.createButtonBar({
-	top:90,
-	right:30,
+	top:165,
+	right:10,
 	width:60,
-	height:40,
+	height:30,
 	labels:['Done'],
 	style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
 	font: {
@@ -81,8 +81,8 @@ btnDone.addEventListener('click', function(e) {
 btnAddToWall = Titanium.UI.createButtonBar({
 	top:200,
 	left:10,
-	width:200,
-	height:40,
+	width:300,
+	height:30,
 	labels:['Add Names'],
 	style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
 	font: {

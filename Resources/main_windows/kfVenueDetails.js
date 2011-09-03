@@ -64,14 +64,14 @@ lblPhone = Titanium.UI.createLabel({
 	height:'auto',
 	top:10,
 	left:19,
-	width:'auto',
-	colour: '#99CCFF',
+	width:'50',
+	color: '#1E4F78',
 	font: {
-		fontSize:14,
+		fontSize:12,
 		fontStyle:'Arial',
 		fontWeight:'bold'
 	},
-	textAlign:'left'
+	textAlign:'right'
 });
 lblPhoneNumber = Titanium.UI.createLabel({
 	text:'+' + win.venuePhone,
@@ -111,14 +111,14 @@ lblAddress = Titanium.UI.createLabel({
 	height:'auto',
 	top:10,
 	left:19,
-	width:'auto',
-	colour: '#99CCFF',
+	width: 50,
+	color: '#1E4F78',
 	font: {
-		fontSize:14,
+		fontSize:12,
 		fontStyle:'Arial',
 		fontWeight:'bold'
 	},
-	textAlign:'left'
+	textAlign:'right'
 });
 
 lblAddress1 = Titanium.UI.createLabel({
@@ -222,29 +222,33 @@ btnAddress = Titanium.UI.createButton({
 });
 
 
-
 btnWhatsOn = Titanium.UI.createButton({
 	title:'Whats On',
 	height:45,
-	width:290,
-	top:250,
+	width:137,
+	top:260,
 	left:5,
 	font: {
-		fontSize:14,
+		fontSize:16,
 		fontFamily:'Arial',
 		fontWeight:'bold'
 	}
 });
 
 btnDeals = Titanium.UI.createButton({
-	title:'See Deals for this venue',
+	title:'See Deals',
 	height:45,
-	width:290,
-	color:'Red',
-	top:300,
-	left:5,
+	width:137,
+	color:'#fff',
+	backgroundColor: 'D94123', //'#C4E8FF',  //'#D94123',
+	backgroundImage: 'none',
+	borderRadius: 10,
+	borderColor: '#555555',
+	borderWidth: '1',
+	top:260,
+	left:158,
 	font: {
-		fontSize:14,
+		fontSize:16,
 		fontFamily:'Arial',
 		fontWeight:'bold'
 	}

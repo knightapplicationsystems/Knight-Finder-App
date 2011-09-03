@@ -39,30 +39,34 @@ function reloadThings() {
 		lblNoVouchers = Titanium.UI.createLabel({
 			text: 'You have no Saved Vouchers',
 			height:50,
-			top:10,
+			top:150,
 			left:10,
-			width:'auto',
+			width:300,
 			color: '#3D3D3D',
 			font: {
 				fontSize:14,
 				fontStyle:'Arial',
-				fontWeight:'bold'
+				fontWeight:'normal'
 			},
-			textAlign:'left'
+			textAlign:'center'
 
 		});
 
 		win.add(lblNoVouchers);
 	} else {
+		
+		
+		
+		
 		var i = 0;
 		
 
 		while (rowVouchers.isValidRow()) {
 			row = Ti.UI.createTableViewRow({
-				height:'auto',
 				backgroundColor:'#ffffff',
 				selectedBackgroundColor:'#dddddd',
-				height:35
+				height:35,
+				hasChild: true
 			});
 
 			var voucherName = Ti.UI.createLabel({
@@ -88,7 +92,7 @@ function reloadThings() {
 
 			tableview = Titanium.UI.createTableView({
 				data:tableData,
-				top:10,
+				top:0,
 				style:Titanium.UI.iPhone.TableViewStyle.GROUPED,
 				headerTitle:'Your saved vouchers'
 			});

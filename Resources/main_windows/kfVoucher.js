@@ -22,6 +22,7 @@ var dbDetails;
 var dbSummary;
 var dbExpiry;
 var dbVenueName;
+var env = "http://knightfinder.heroku.com";
 var db;
 
 //Window Loading section
@@ -32,7 +33,7 @@ db = Titanium.Database.open('knightfinder');
 
 
 if (win.voucherType == 'Saved Venue Deal') {
-	win.title = win.voucherType + ' voucher';
+	win.title = win.voucherType;
 	getTheVoucher = db.execute('SELECT * FROM vouchers WHERE voucherID =' + win.voucherID);
 	dbDetails = getTheVoucher.field(1);
 	dbSummary = getTheVoucher.field(2);
@@ -56,11 +57,11 @@ lblKFVoucher = Titanium.UI.createLabel({
 	text: 'Knight Finder Voucher',
 	height:'auto',
 	top:10,
-	left:5,
+	left:30,
 	width:'auto',
 	colour: '#000000',
 	font: {
-		fontSize:20,
+		fontSize:23,
 		fontStyle:'Arial',
 		fontWeight:'bold'
 	},
@@ -70,7 +71,7 @@ lblKFVoucher = Titanium.UI.createLabel({
 lblInfoSummary = Titanium.UI.createLabel({
 	text: 'Summary:',
 	height:'auto',
-	top:50,
+	top:45,
 	left:5,
 	width:'auto',
 	colour: '#000000',
@@ -85,7 +86,7 @@ lblInfoSummary = Titanium.UI.createLabel({
 lblSummary = Titanium.UI.createLabel({
 	text: win.voucherSummary + ' @ ' + win.venueName,
 	height:'auto',
-	top:70,
+	top:60,
 	left:5,
 	width:'auto',
 	colour: '#000000',
@@ -103,7 +104,7 @@ if (win.voucherType == 'Saved Venue Deal') {
 lblInfoDetails = Titanium.UI.createLabel({
 	text: 'Details of deal:',
 	height:'auto',
-	top:100,
+	top:87,
 	left:5,
 	width:'auto',
 	colour: '#000000',
@@ -118,12 +119,12 @@ lblInfoDetails = Titanium.UI.createLabel({
 lblDetails = Titanium.UI.createLabel({
 	text: win.voucherDetails,
 	height:'auto',
-	top:120,
+	top:105,
 	left:5,
 	width:'auto',
 	colour: '#000000',
 	font: {
-		fontSize:18,
+		fontSize:15,
 		fontStyle:'Arial',
 		fontWeight:'bold'
 	},
@@ -137,7 +138,7 @@ if (win.voucherType == 'Saved Venue Deal') {
 lblInfoExpDate = Titanium.UI.createLabel({
 	text: 'Expires:',
 	height:'auto',
-	top:170,
+	top:250,
 	left:5,
 	width:'auto',
 	colour: '#000000',
@@ -173,12 +174,12 @@ if (win.voucherType == 'Saved Venue Deal') {
 lblExpDate = Titanium.UI.createLabel({
 	text: dateString,
 	height:'auto',
-	top:200,
+	top:270,
 	left:5,
 	width:'auto',
 	colour: '#000000',
 	font: {
-		fontSize:18,
+		fontSize:15,
 		fontStyle:'Arial',
 		fontWeight:'bold'
 	},
@@ -190,8 +191,8 @@ if (win.voucherType == 'Saved Venue Deal') {
 }
 
 btnSave = Titanium.UI.createButtonBar({
-	top:250,
-	left:9,
+	top:310,
+	left:10,
 	width:300,
 	height:40,
 	labels:['Save'],
@@ -209,6 +210,17 @@ if (win.voucherType == 'Saved Venue Deal') {
 }
 
 btnSave.addEventListener('click', function(e) {
+		try {
+			var xhr = Titanium.Network.createHTTPClient();
+			url = env + "/api/venue/" + win.venueID + "/deals/" + win.dealID + "/log";
+			Ti.API.warn(url);
+			xhr.open("GET", url);
+			xhr.send();
+			
+		}
+		catch(e){
+			Ti.API.warn(e);
+		}
 
 	var row = db.execute('SELECT * FROM vouchers ORDER BY voucherID DESC');
 

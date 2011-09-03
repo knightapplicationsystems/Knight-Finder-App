@@ -18,6 +18,8 @@ var btnViewMap;
 var viewMap;
 var reviewKF;
 var tableview;
+var lblUnableToConnect;
+var btnRetry;
 var tryonce = false;
 var trytwice = false;
 var tryfinal = false;
@@ -38,6 +40,8 @@ lastDistance = 0;
 win = Titanium.UI.currentWindow;
 win.title = appTitle;
 win.backgroundColor = 'stripped';
+
+
 
 //Create DB
 var db;
@@ -172,11 +176,13 @@ function geoResp(e) {
 
 	Ti.API.info('GeoLocation Response received');
 
+	
 	if (!e.success) {
 		failureMessage.message = "An Error has occured whilst trying to determine your location, please try and refresh, and make sure you have sufficient mobile signal";
 		failureMessage.show();
 		return;
 	}
+	
 
 	Ti.API.info("Geo Success");
 
@@ -196,53 +202,93 @@ function geoResp(e) {
 
 	//}
 	//Keep trying to get a location
+	initialGeoReceived = true;
+	/*
 	if (initialGeoReceived) {
 		Titanium.Geolocation.removeEventListener('location',geoResp);
 		return;
 	}
+	*/
 
-	initialGeoReceived = true;
 
 	url = env + "/api/venues?loc=" + geoLat + "," + geoLong + "&limit=" + 50;
+	//Test URL
+	//url = env + "/api/timeout_test";
+	
 	Ti.API.info(url);
 	// Call the webservice
 	callService();
+	
 }
 
 function callService() {
 	
-
+	Titanium.Geolocation.removeEventListener('location',geoResp);
 	// Call the webservice using a web request
 	var xhr = Titanium.Network.createHTTPClient();
 
 	xhr.onload = serviceResponse;
 
 	xhr.onerror = function() {
-		hideIndicator();
-		tryonce = true;
-		if (tryonce = true)
-		{
-			callService();
-			trytwice = true;
-		}
-		if (trytwice = true)
-		{
-			callService();
-			tryfinal = true;
-		}
-		if (tryfinal = true)
-		{
-			failureMessage.message = "Unable to connect to Webservice, Please close Knight Finder and ensure you have a Minimum of an Edge network";
+		Titanium.API.info('Am I dead yet?');
+			//hideIndicator();
+	
+			Ti.API.info("Error in webserver");
+	
+			failureMessage.message = "Unable to connect to Webservice, Please try again later (For best results use a 3G or WiFi connection)";
 			failureMessage.show();
-			return;
-		}
+			
+			lblUnableToConnect = Titanium.UI.createLabel({
+			text:'Sorry we are unable to connect you to the Knight Finder servers at this time, please try again later',
+			height:'auto',
+			top: 10,
+			left:10,
+			color:'Black',
+			font: {
+				fontSize:15,
+				fontStyle:'normal'
+			},
+			textAlign:'left'
+		});
 		
-		showIndicator();
-		Ti.API.info("Error in webserver");
-
-		failureMessage.message = "Unable to connect to Webservice, Retrying...";
-		failureMessage.show();
-	};
+		btnRetry = Titanium.UI.createButtonBar({
+			top:100,
+			left:10,
+			width:300,
+			height:40,
+			labels:['Retry'],
+			style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
+			font: {
+				fontSize:15,
+				fontFamily:'Arial',
+				fontWeight:'bold'
+			}
+	
+		});
+		
+		win.add(btnRetry, lblUnableToConnect);
+		
+		btnRetry.addEventListener('click', function(e)
+		{
+				Titanium.API.info('FIred');
+	
+				if (lblUnableToConnect.visible == true)
+				{
+					Titanium.API.info('Idiot');
+					lblUnableToConnect.visible = false;
+				}
+				if (btnRetry.visible == true)
+				{
+					Titanium.API.info('Idiot2');
+					btnRetry.visible = false;
+				}
+			//url = env + "/api/venues?loc=" + geoLat + "," + geoLong + "&limit=" + 50;
+			callService();
+		});
+			
+			//return;
+	}
+	
 	Titanium.API.info(url);
 
 	xhr.open("GET", url);
@@ -250,6 +296,7 @@ function callService() {
 }
 
 function serviceResponse() {
+Titanium.API.info('Am I dead?');
 
 	Ti.API.info(this.responseText);
 
@@ -283,9 +330,10 @@ function serviceResponse() {
 		}
 
 		row = Ti.UI.createTableViewRow({
-			height:35,
+			height:36,
 			backgroundColor:'#FFFFFF',
-			selectedBackgroundColor:'#dddddd'
+			selectedBackgroundColor:'#dddddd',
+			hasChild : true
 		});
 
 		var venueName = Ti.UI.createLabel({
@@ -293,7 +341,7 @@ function serviceResponse() {
 			color: '#000000',
 			textAlign:'left',
 			left:10,
-			top:2,
+			top:8,
 			height:18,
 			font: {
 				fontWeight:'bold',
@@ -301,9 +349,17 @@ function serviceResponse() {
 			}
 		});
 		
+		if (venues[i].venue.priority == 1)
+		{
+			row.backgroundColor = '#C4E8FF';
+			row.opacity = 0.01;
+		}
+		
+
 		Ti.API.info(venues[i].venue.name);
 		row.add(venueName);
 
+		
 		tableData[i] = row;
 	}
 
@@ -338,10 +394,25 @@ function serviceResponse() {
 	});
 	
 	tableview.addEventListener('click', function(e) {
+		
+		
+
+		
 		var index = e.index;
 		var section = e.section;
 		var row = e.row;
 		var rowdata = e.rowData;
+		
+		try {
+			var xhr = Titanium.Network.createHTTPClient();
+			url = env + '/api/venue/' + venues[e.index].venue.id + '/log';
+			xhr.open("GET", url);
+			xhr.send();
+			
+		}
+		catch(e){
+			
+		}
 
 		var venueDetails = Titanium.UI.createWindow({
 			url:'kfVenueDetails.js'
@@ -395,9 +466,10 @@ function endUpdate() {
 		
 		if (i < venues.length) {
 			row = Ti.UI.createTableViewRow({
-				height:35,
+				height:36,
 				backgroundColor:'#FFFFFF',
-				selectedBackgroundColor:'#dddddd'
+				selectedBackgroundColor:'#dddddd',
+				hasChild:true
 			});
 	
 			var venueName = Ti.UI.createLabel({
@@ -405,7 +477,7 @@ function endUpdate() {
 				color: '#000000',
 				textAlign:'left',
 				left:10,
-				top:2,
+				top:8,
 				height:18,
 				font: {
 					fontWeight:'bold',

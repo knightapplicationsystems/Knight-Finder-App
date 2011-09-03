@@ -85,12 +85,12 @@ function eventsResponse()
 					{
 						text:"There are no events currently listed for " + win.venueName,
 						height:50,
-						top: 10,
+						top: 150,
 						left:10,
-						width:250,
+						width:300,
 						color:'Black',
-						font:{fontSize:15, fontStyle:'normal',fontWeight:'bold'},
-						textAlign:'left'
+						textAlign: 'center',
+						font:{fontSize:15, fontStyle:'normal',fontWeight:'normal'}
 					});
 					
 					actInd.hide();
@@ -109,7 +109,7 @@ function eventsResponse()
 						
 							//var alteredName = singleEvent.name.replace("@ " + singleEvent.location, "");
 							
-							row = Ti.UI.createTableViewRow({height:45,backgroundColor:'#FFFFFF',selectedBackgroundColor:'#dddddd'}); 
+							row = Ti.UI.createTableViewRow({height:56,backgroundColor:'#FFFFFF',selectedBackgroundColor:'#dddddd',hasChild:true}); 
 							
 							var eventName = Ti.UI.createLabel({
 								text: singleEvent.name,
@@ -118,6 +118,7 @@ function eventsResponse()
 								left:10,
 								top:2,
 								height:'auto',
+								width:'auto',
 								//fbId: events[i].id,
 								fbName: events[i].name,
 								font:{fontWeight:'bold',fontSize:13}
@@ -146,7 +147,7 @@ function eventsResponse()
 						headerTitle:'Events listed on Facebook for \n' + win.venueName,
 						left:-5,
 						color:'Grey',
-						footerTitle:'Please note, Knight Finder uses the Facebook Graph API, and thus is not liable for the accuracy of the data shown above' 
+						footerTitle:'Knight Finder uses the Facebook Graph API, and thus is not liable for the accuracy of the data shown above' 
 						
 					});	
 					win.add(tableview);
