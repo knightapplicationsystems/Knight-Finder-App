@@ -1,4 +1,4 @@
-#Sat Aug 27 20:35:37 BST 2011
+#Sun Sep 11 16:38:42 BST 2011
 eclipse.preferences.version=1
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/appid=*
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/filepath=/Users/thesargenator/Downloads/Team_Provisioning_Profile_ (1).mobileprovision
@@ -12,3 +12,7 @@ provisioning_profiles/distribution/C9C32B07-5C50-4116-B1FD-B0AE47A20930/appid=co
 provisioning_profiles/distribution/C9C32B07-5C50-4116-B1FD-B0AE47A20930/filepath=/Users/thesargenator/Downloads/Knight_Finder_Beta1 (4).mobileprovision
 provisioning_profiles/distribution/C9C32B07-5C50-4116-B1FD-B0AE47A20930/name=Knight Finder Beta1
 provisioning_profiles/distribution/C9C32B07-5C50-4116-B1FD-B0AE47A20930/uuid=C9C32B07-5C50-4116-B1FD-B0AE47A20930
+provisioning_profiles/distribution/D8AB50BB-F41D-43A2-9C0B-275E211F8890/appid=com.knightfinderapp
+provisioning_profiles/distribution/D8AB50BB-F41D-43A2-9C0B-275E211F8890/filepath=/Users/thesargenator/Downloads/Knight_Finder_Production (1).mobileprovision
+provisioning_profiles/distribution/D8AB50BB-F41D-43A2-9C0B-275E211F8890/name=Knight Finder Production
+provisioning_profiles/distribution/D8AB50BB-F41D-43A2-9C0B-275E211F8890/uuid=D8AB50BB-F41D-43A2-9C0B-275E211F8890

@@ -54,7 +54,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		kCpDZvDrF5JUYO1Hv1MTfhA7wBw=
+		b1PtEHCO3F7QxEre0M6IBYCTE3s=
 		</data>
 		<key>images/53-house.png</key>
 		<data>
@@ -64,9 +64,13 @@
 		<data>
 		5ousKbsxCuq5k7L+tk1zrGOespI=
 		</data>
-		<key>images/list_arrow.png</key>
+		<key>images/cubleogo.png</key>
 		<data>
-		hP+NTMcopsdRBIgAqwkcGcApPBs=
+		zHMUzxvcZH1cZS8PGSJb+d2ULgU=
+		</data>
+		<key>images/kflogo.png</key>
+		<data>
+		Zn/pTV2RsKk8+GT7GFHaL79nW8M=
 		</data>
 		<key>module.xcconfig</key>
 		<data>

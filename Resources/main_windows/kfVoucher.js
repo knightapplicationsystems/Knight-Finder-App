@@ -22,7 +22,7 @@ var dbDetails;
 var dbSummary;
 var dbExpiry;
 var dbVenueName;
-var env = "http://knightfinder.heroku.com";
+var env = "http://knightfinder-prod.heroku.com";
 var db;
 
 //Window Loading section
@@ -31,8 +31,7 @@ win = Titanium.UI.currentWindow;
 //Open the db
 db = Titanium.Database.open('knightfinder');
 
-
-if (win.voucherType == 'Saved Venue Deal') {
+if(win.voucherType == 'Saved Venue Deal') {
 	win.title = win.voucherType;
 	getTheVoucher = db.execute('SELECT * FROM vouchers WHERE voucherID =' + win.voucherID);
 	dbDetails = getTheVoucher.field(1);
@@ -45,212 +44,231 @@ if (win.voucherType == 'Saved Venue Deal') {
 win.backgroundColor = 'stripped';
 //Knight Finder standard Alert Messages
 alertMessage = Titanium.UI.createAlertDialog({
-	title: 'Knight Finder',
-	message: 'Alert Message'
+	title : 'Knight Finder',
+	message : 'Alert Message'
 });
 failureMessage = Titanium.UI.createAlertDialog({
-	title: 'Knight Finder',
-	message: 'Failure Message'
+	title : 'Knight Finder',
+	message : 'Failure Message'
 });
 db = Titanium.Database.open('knightfinder');
 lblKFVoucher = Titanium.UI.createLabel({
-	text: 'Knight Finder Voucher',
-	height:'auto',
-	top:10,
-	left:30,
-	width:'auto',
-	colour: '#000000',
-	font: {
-		fontSize:23,
-		fontStyle:'Arial',
-		fontWeight:'bold'
+	text : 'Knight Finder Voucher',
+	height : 'auto',
+	top : 10,
+	left : 30,
+	width : 'auto',
+	colour : '#000000',
+	font : {
+		fontSize : 23,
+		fontStyle : 'Arial',
+		fontWeight : 'bold'
 	},
-	textAlign:'left'
+	textAlign : 'left'
 });
-
 lblInfoSummary = Titanium.UI.createLabel({
-	text: 'Summary:',
-	height:'auto',
-	top:45,
-	left:5,
-	width:'auto',
-	colour: '#000000',
-	font: {
-		fontSize:13,
-		fontStyle:'Arial',
-		fontWeight:'bold'
+	text : 'Summary:',
+	height : 'auto',
+	top : 45,
+	left : 5,
+	width : 'auto',
+	colour : '#000000',
+	font : {
+		fontSize : 13,
+		fontStyle : 'Arial',
+		fontWeight : 'bold'
 	},
-	textAlign:'left'
+	textAlign : 'left'
 });
-
 lblSummary = Titanium.UI.createLabel({
-	text: win.voucherSummary + ' @ ' + win.venueName,
-	height:'auto',
-	top:60,
-	left:5,
-	width:'auto',
-	colour: '#000000',
-	font: {
-		fontSize:18,
-		fontStyle:'Arial',
-		fontWeight:'bold'
+	text : win.voucherSummary + ' @ ' + win.venueName,
+	height : 'auto',
+	top : 60,
+	left : 5,
+	width : 'auto',
+	colour : '#000000',
+	font : {
+		fontSize : 18,
+		fontStyle : 'Arial',
+		fontWeight : 'bold'
 	},
-	textAlign:'left'
+	textAlign : 'left'
 });
-if (win.voucherType == 'Saved Venue Deal') {
-	lblSummary.text = dbSummary + ' @ ' + dbVenueName;
+if(win.voucherType == 'Saved Venue Deal') {
+	lblSummary.text = unescape(dbSummary) + ' @ ' + unescape(dbVenueName);
 }
-
 lblInfoDetails = Titanium.UI.createLabel({
-	text: 'Details of deal:',
-	height:'auto',
-	top:87,
-	left:5,
-	width:'auto',
-	colour: '#000000',
-	font: {
-		fontSize:13,
-		fontStyle:'Arial',
-		fontWeight:'bold'
+	text : 'Details of deal:',
+	height : 'auto',
+	top : 87,
+	left : 5,
+	width : 'auto',
+	colour : '#000000',
+	font : {
+		fontSize : 13,
+		fontStyle : 'Arial',
+		fontWeight : 'bold'
 	},
-	textAlign:'left'
+	textAlign : 'left'
 });
-
 lblDetails = Titanium.UI.createLabel({
-	text: win.voucherDetails,
-	height:'auto',
-	top:105,
-	left:5,
-	width:'auto',
-	colour: '#000000',
-	font: {
-		fontSize:15,
-		fontStyle:'Arial',
-		fontWeight:'bold'
+	text : win.voucherDetails,
+	height : 'auto',
+	top : 105,
+	left : 5,
+	width : 'auto',
+	colour : '#000000',
+	font : {
+		fontSize : 15,
+		fontStyle : 'Arial',
+		fontWeight : 'bold'
 	},
-	textAlign:'left'
+	textAlign : 'left'
 });
 
-if (win.voucherType == 'Saved Venue Deal') {
-	lblDetails.text = dbDetails;
+if(win.voucherType == 'Saved Venue Deal') {
+	lblDetails.text = unescape(dbDetails);
 }
-
 lblInfoExpDate = Titanium.UI.createLabel({
-	text: 'Expires:',
-	height:'auto',
-	top:250,
-	left:5,
-	width:'auto',
-	colour: '#000000',
-	font: {
-		fontSize:13,
-		fontStyle:'Arial',
-		fontWeight:'bold'
+	text : 'Expires:',
+	height : 'auto',
+	top : 250,
+	left : 5,
+	width : 'auto',
+	colour : '#000000',
+	font : {
+		fontSize : 13,
+		fontStyle : 'Arial',
+		fontWeight : 'bold'
 	},
-	textAlign:'left'
+	textAlign : 'left'
 });
-if (win.voucherType == 'Saved Venue Deal') {
+if(win.voucherType == 'Saved Venue Deal') {
 
 } else {
 
 	var voucherDate = win.voucherExpDate;
 	var temp = voucherDate.split("T");
-	
+
 	Ti.API.info("Event Date:" + temp[0] + ". Event Time:" + temp[1]);
-	
 	voucherDate = temp[0].split("-");
 	voucherDate = voucherDate[1] + "/" + voucherDate[2] + "/" + voucherDate[0];
-	
+
 	var eventTime = temp[1].split("+");
 	eventTime = eventTime[0].split(":");
-	
+
 	var theDate = new Date(voucherDate);
 	theDate.setHours(eventTime[0], eventTime[1], 0, 0);
-	
 	dateString = padwithZero(theDate.getDate()) + "/" + padwithZero(theDate.getMonth() + 1) + "/" + padwithZero(theDate.getFullYear()) + " " + padwithZero(theDate.getHours()) + ":" + padwithZero(theDate.getMinutes());
 	Ti.API.info("Parsed date: " + theDate + ". Date String: " + dateString);
 }
-
 lblExpDate = Titanium.UI.createLabel({
-	text: dateString,
-	height:'auto',
-	top:270,
-	left:5,
-	width:'auto',
-	colour: '#000000',
-	font: {
-		fontSize:15,
-		fontStyle:'Arial',
-		fontWeight:'bold'
+	text : dateString,
+	height : 'auto',
+	top : 270,
+	left : 5,
+	width : 'auto',
+	colour : '#000000',
+	font : {
+		fontSize : 15,
+		fontStyle : 'Arial',
+		fontWeight : 'bold'
 	},
-	textAlign:'left'
+	textAlign : 'left'
 });
 
-if (win.voucherType == 'Saved Venue Deal') {
-	lblExpDate.text = dbExpiry;
-}
+if(win.voucherType == 'Saved Venue Deal') {
+	
+	var voucherDate = dbExpiry;
+	var temp = voucherDate.split("T");
 
+	Ti.API.info("Event Date:" + temp[0] + ". Event Time:" + temp[1]);
+	voucherDate = temp[0].split("-");
+	voucherDate = voucherDate[1] + "/" + voucherDate[2] + "/" + voucherDate[0];
+
+	var eventTime = temp[1].split("+");
+	eventTime = eventTime[0].split(":");
+
+	var theDate = new Date(voucherDate);
+	theDate.setHours(eventTime[0], eventTime[1], 0, 0);
+	dateString = padwithZero(theDate.getDate()) + "/" + padwithZero(theDate.getMonth() + 1) + "/" + padwithZero(theDate.getFullYear()) + " " + padwithZero(theDate.getHours()) + ":" + padwithZero(theDate.getMinutes());
+	Ti.API.info("Parsed date: " + theDate + ". Date String: " + dateString);
+	
+	lblExpDate.text = dateString;
+
+}
 btnSave = Titanium.UI.createButtonBar({
-	top:310,
-	left:10,
-	width:300,
-	height:40,
-	labels:['Save'],
-	style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
-	font: {
-		fontSize:15,
-		fontFamily:'Arial',
-		fontWeight:'bold'
+	top : 310,
+	left : 10,
+	width : 300,
+	height : 40,
+	labels : ['Save'],
+	style : Titanium.UI.iPhone.SystemButtonStyle.BAR,
+	font : {
+		fontSize : 15,
+		fontFamily : 'Arial',
+		fontWeight : 'bold'
 	}
 
 });
 
-if (win.voucherType == 'Saved Venue Deal') {
+if(win.voucherType == 'Saved Venue Deal') {
 	btnSave.visible = false;
 }
 
 btnSave.addEventListener('click', function(e) {
-		try {
-			var xhr = Titanium.Network.createHTTPClient();
-			url = env + "/api/venue/" + win.venueID + "/deals/" + win.dealID + "/log";
-			Ti.API.warn(url);
-			xhr.open("GET", url);
-			xhr.send();
-			
-		}
-		catch(e){
-			Ti.API.warn(e);
-		}
 
 	var row = db.execute('SELECT * FROM vouchers ORDER BY voucherID DESC');
 
-	if (row.field(0) == null) {
+	if(row.field(0) == null) {
 		voucherID = 1;
-		Ti.API.info('First ' + voucherID);
+
 	} else {
-		Ti.API.info('Second ' + voucherID);
 		voucherID = row.field(0);
-		Ti.API.info('Third ' + voucherID);
 		voucherID = voucherID + 1;
-		Ti.API.info('Fourth ' + voucherID);
 
 	}
 
-	db.execute("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName) VALUES (" + voucherID + ",'" + win.voucherDetails + "','" + win.voucherSummary + "','" + dateString + "','" + win.venueName + "')");
-	alertMessage.message = 'Your Voucher has been saved';
-	alertMessage.show();
-	win.close();
+	var acceptKFConditions = Titanium.UI.createAlertDialog({
+		title : 'Knight Finder',
+		message : 'By clicking accept you are agreeing to the following conditions: \n This deal can be withdrawn by Knight Finder or ' + win.venueName + ' at any time without prior notice',
+		buttonNames : ['Accept', 'No']
+	});
+	acceptKFConditions.show();
+
+	acceptKFConditions.addEventListener('click', function(e) {
+		if(e.index == 0) {
+
+			try {
+				var xhr = Titanium.Network.createHTTPClient();
+				url = env + "/api/venue/" + win.venueID + "/deals/" + win.dealID + "/log";
+				Ti.API.warn(url);
+				xhr.open("GET", url);
+				xhr.send();
+
+			} catch(e) {
+				Ti.API.warn(e);
+			}
+			var sql = ("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "','" + win.venueName + "')");
+			//alertMessage.message = sql;
+			//alertMessage.show();
+			db.execute("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "','" + win.venueName + "')");
+			alertMessage.message = 'Your Voucher has been saved';
+			alertMessage.show();
+			win.close();
+		}
+	});
 });
 //This is part of the date adjustment
 function padwithZero(number) {
 
 	var testedNumber = number + "";
 
-	if (testedNumber.length == 1) {
+	if(testedNumber.length == 1) {
 		return "0" + testedNumber;
 	}
 
 	return testedNumber;
 }
 
-win.add(lblKFVoucher,lblSummary,lblDetails,lblInfoSummary,lblInfoDetails,btnSave,lblInfoExpDate,lblExpDate);
+win.add(lblKFVoucher, lblSummary, lblDetails, lblInfoSummary, lblInfoDetails, btnSave, lblInfoExpDate, lblExpDate);

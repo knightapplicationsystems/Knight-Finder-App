@@ -6,7 +6,7 @@
 var win;
 var appTitle = 'Knight Finder';
 var url;
-var env = "http://knightfinder.heroku.com";
+var env = "http://knightfinder-prod.heroku.com";
 var actInd;
 var activityWindow;
 var alertMessage;
@@ -72,7 +72,7 @@ function serviceResponse() {
 		Ti.API.info("JSON parse ok");
 		deals = JSON.parse(this.responseText);
 	} catch (e) {
-
+		hideIndicator();
 		if(!deals) {
 			
 			Ti.API.info('Response status false');
@@ -187,7 +187,7 @@ function callService() {
 		callService();
 		showIndicator();
 		Ti.API.info("Error in webserver");
-
+		hideIndicator();
 		failureMessage.message = "Unable to connect to Webservice, Retrying...";
 		failureMessage.show();
 	};

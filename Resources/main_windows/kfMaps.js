@@ -13,7 +13,7 @@ var failureMessage;
 var mapView;
 var geoLong;
 var geoLat;
-var env = "http://knightfinder.heroku.com";
+var env = "http://knightfinder-prod.heroku.com";
 var initialResultsReceived = false;
 var actInd;
 var activityWindow;

@@ -38,12 +38,11 @@ function showIndicator() {
 		message:'Getting Events...',
 		color: 'white',
 		height:60,
-		width:60,
-		left:100
+		width:60
 	});
 
 	activityWindow = Ti.UI.createWindow({
-		width: 300,
+		width: 200,
 		height: 100
 	});
 
@@ -147,7 +146,7 @@ function eventsResponse()
 						headerTitle:'Events listed on Facebook for \n' + win.venueName,
 						left:-5,
 						color:'Grey',
-						footerTitle:'Knight Finder uses the Facebook Graph API, and thus is not liable for the accuracy of the data shown above' 
+						footerTitle:'Knight Finder uses the Facebook Graph API, and thus is not liable for \n the accuracy of the data shown above' 
 						
 					});	
 					win.add(tableview);

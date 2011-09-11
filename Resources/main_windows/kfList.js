@@ -7,7 +7,7 @@ var win;
 var venues;
 var url;
 var appTitle = 'Knight Finder';
-var env = "http://knightfinder.heroku.com";
+var env = "http://knightfinder-prod.heroku.com";
 var initialResultsReceived = false;
 var geoLong;
 var geoLat;
@@ -51,6 +51,7 @@ db = Titanium.Database.open('knightfinder');
 db.execute('CREATE TABLE IF NOT EXISTS dbVersion (versionID)');
 db.execute('CREATE TABLE IF NOT EXISTS review (response,count)');
 db.execute('CREATE TABLE IF NOT EXISTS vouchers (voucherID, details, summary, date_added, expiry_date, venueID,venueName)');
+db.execute("INSERT INTO dbVersion (versionID) VALUES ('2.0.2')");
 
 var navActInd = Titanium.UI.createActivityIndicator();
 win.setRightNavButton(navActInd);
@@ -203,15 +204,18 @@ function geoResp(e) {
 	//}
 	//Keep trying to get a location
 	initialGeoReceived = true;
-	/*
+	
 	if (initialGeoReceived) {
 		Titanium.Geolocation.removeEventListener('location',geoResp);
 		return;
 	}
-	*/
+	
 
 
 	url = env + "/api/venues?loc=" + geoLat + "," + geoLong + "&limit=" + 50;
+	
+	//alertMessage.message = url;
+	//alertMessage.show();
 	//Test URL
 	//url = env + "/api/timeout_test";
 	
@@ -230,6 +234,7 @@ function callService() {
 	xhr.onload = serviceResponse;
 
 	xhr.onerror = function() {
+		hideIndicator();
 		Titanium.API.info('Am I dead yet?');
 			//hideIndicator();
 	
@@ -426,6 +431,8 @@ Titanium.API.info('Am I dead?');
 		var venueID = venues[e.index].venue.id
 		var venueLong = venues[e.index].venue.longitude;
 		var venueLat = venues[e.index].venue.latitude;
+		var venueEmail = venues[e.index].venue.email;
+		var venueWeb = venues[e.index].venue.url;
 
 		venueDetails.venueName = venueName;
 		venueDetails.venueAddress1 = venueAddress1;
@@ -436,6 +443,8 @@ Titanium.API.info('Am I dead?');
 		venueDetails.venueID = venueID;
 		venueDetails.venueLong = venueLong;
 		venueDetails.venueLat = venueLat;
+		venueDetails.venueEmail = venueEmail;
+		venueDetails.venueWeb = venueWeb;
 
 		Titanium.UI.currentTab.open(venueDetails, {
 			animated:true

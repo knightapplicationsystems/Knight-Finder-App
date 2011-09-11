@@ -18,7 +18,15 @@ win = Titanium.UI.currentWindow;
 win.title = 'Vouchers and Featured';
 win.backgroundColor = 'stripped';
 
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var minutes = currentTime.getMinutes();
+var year = currentTime.getFullYear();
+var month = currentTime.getMonth() + 1;
+var day = currentTime.getDate();
+var currentDate;
 
+//WHERE expiry_date >" + currentDate +  "ORDER BY voucherID DESC");
 
 //Knight Finder standard Alert Messages
 alertMessage = Titanium.UI.createAlertDialog({
@@ -32,7 +40,16 @@ alertMessage = Titanium.UI.createAlertDialog({
 db = Titanium.Database.open('knightfinder');
 reloadThings();
 function reloadThings() {
-	rowVouchers = db.execute('SELECT * FROM vouchers ORDER BY voucherID DESC');
+	//padwithZero(theDate.getDate()) + "/" + padwithZero(theDate.getMonth() + 1) + "/" + padwithZero(theDate.getFullYear()) + " " + padwithZero(theDate.getHours()) + ":" + padwithZero(theDate.getMinutes());
+
+	currentDate = padwithZero(year) + '-' + padwithZero(month) + '-' + padwithZero(day) + 'T' + padwithZero(hours) + ':' + padwithZero(minutes) + ':00';
+
+	//var sql = ("SELECT * FROM vouchers WHERE expiry_date >'" + currentDate +  "' ORDER BY voucherID DESC");
+
+	rowVouchers = db.execute("SELECT * FROM vouchers WHERE expiry_date >'" + currentDate +  "' ORDER BY voucherID DESC");
+	
+	//alertMessage.message = sql;
+	//alertMessage.show();
 
 	if (rowVouchers.field(0) == null) {
 
@@ -70,7 +87,7 @@ function reloadThings() {
 			});
 
 			var voucherName = Ti.UI.createLabel({
-				text: rowVouchers.field(2),
+				text: unescape(rowVouchers.field(2)),
 				color: '#3D3D3D',
 				textAlign:'left',
 				left:10,
@@ -127,6 +144,18 @@ function reloadThings() {
 		}
 
 	}
+}
+
+//This is part of the date adjustment
+function padwithZero(number) {
+
+	var testedNumber = number + "";
+
+	if(testedNumber.length == 1) {
+		return "0" + testedNumber;
+	}
+
+	return testedNumber;
 }
 
 win.addEventListener('focus', function() { reloadThings(); });
