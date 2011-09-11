@@ -5,7 +5,7 @@ reporting an issue to help us understand your environment, build settings
 and aid in debugging. Please attach this log to any issue that you report.
 ================================================================================
 
-Starting build at 09/11/11 18:31
+Starting build at 09/11/11 20:17
 
 Build details:
 
@@ -170,12 +170,12 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   manifest                                                                                                                 [241]   
   README                                                                                                                   [582]   
   tiapp.xml                                                                                                                [1613]  
-  .git/COMMIT_EDITMSG                                                                                                      [6]     
+  .git/COMMIT_EDITMSG                                                                                                      [26]    
   .git/config                                                                                                              [305]   
   .git/description                                                                                                         [73]    
   .git/FETCH_HEAD                                                                                                          [115]   
   .git/HEAD                                                                                                                [23]    
-  .git/index                                                                                                               [5608]  
+  .git/index                                                                                                               [169864]
   .git/ORIG_HEAD                                                                                                           [41]    
   .git/hooks/applypatch-msg.sample                                                                                         [452]   
   .git/hooks/commit-msg.sample                                                                                             [896]   
@@ -188,12 +188,12 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/hooks/prepare-commit-msg.sample                                                                                     [1239]  
   .git/hooks/update.sample                                                                                                 [3611]  
   .git/info/exclude                                                                                                        [240]   
-  .git/logs/HEAD                                                                                                           [7327]  
+  .git/logs/HEAD                                                                                                           [7501]  
   .git/logs/refs/heads/KnightFinderBugFixBranch                                                                            [335]   
   .git/logs/refs/heads/KnightFInderVersion2.0.2                                                                            [330]   
   .git/logs/refs/heads/KnightFinderVersion2.1.0                                                                            [520]   
   .git/logs/refs/heads/KnightFinderVersion3.0.0                                                                            [520]   
-  .git/logs/refs/heads/master                                                                                              [2302]  
+  .git/logs/refs/heads/master                                                                                              [2476]  
   .git/logs/refs/remotes/origin/master                                                                                     [1395]  
   .git/objects/00/22152b9069bbe7026a2dc6f3d07d3efecbe2d4                                                                   [308]   
   .git/objects/00/3fe8e1d01eef7e096eaf9ecf9e4dff2ea8cdf1                                                                   [9073]  
@@ -235,6 +235,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/04/8a8322b46084fe116d2c4ded770af935b56f70                                                                   [31291] 
   .git/objects/04/af52cb741d9fb1f8f802aacd9c76feccccc3d4                                                                   [76]    
   .git/objects/04/d6a4a2502fcfbb559dd149ebc1342852c35097                                                                   [2419]  
+  .git/objects/04/dc60a76f8683b47e090c80a4e818954227d4ab                                                                   [1556674]
   .git/objects/04/fae9debc08314f0dbad915635b4fe63688b73f                                                                   [878]   
   .git/objects/05/0812185c438b973b3a71b0beb4afc0d034ea37                                                                   [17001] 
   .git/objects/05/23513a4860af742cb714af5a3ab036c79b5813                                                                   [27005] 
@@ -249,6 +250,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/05/8d5dc93e6248a9b2a651dba406fa0b3f3d67d8                                                                   [601]   
   .git/objects/05/c3cc4702287d829b5613ba448ed31e17d63112                                                                   [1705]  
   .git/objects/05/d4be75daa17f4163e25a42aa17bbe02e3cf569                                                                   [4686]  
+  .git/objects/05/d58d50c3e35c4ac8e735bb066b83bb94bc837a                                                                   [22610] 
   .git/objects/05/d8d1eea0f1bba2876c76036125c53629be6896                                                                   [46]    
   .git/objects/05/f3b60c0831d6e564973411530763a077782d8e                                                                   [328]   
   .git/objects/06/08d2e7eb48779795545f079764ea17859b739c                                                                   [6215]  
@@ -334,6 +336,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/0d/d7af0217f1aba2dff50ef5a31182e09d5ef675                                                                   [14949] 
   .git/objects/0d/db2d9ff0967fe1a6b93b6b2a623816f47ba72f                                                                   [29887] 
   .git/objects/0d/e488cad01fd0f464d68b2095abc22d56d97435                                                                   [26012] 
+  .git/objects/0d/e4efc2968ac2ead7ec8ff7efaf1ac87b98d1b2                                                                   [22663] 
   .git/objects/0d/ee6f28a7dc418d3c4a2b700662017b27c6e7ae                                                                   [19154] 
   .git/objects/0d/fcba2714d74e0bcf9dd4b323aba64e2f18534a                                                                   [2422]  
   .git/objects/0d/ff02e13bef108147a6d68e37ad878215528bfd                                                                   [17155] 
@@ -367,6 +370,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/10/f899629f0d48246c97245e7ddff2b6aa99fa05                                                                   [2424]  
   .git/objects/11/008d75aac0d07b43f0c39ac7c02ca1edf6a3c8                                                                   [61]    
   .git/objects/11/4e4f3b4376bdcdb7bfdb0efd18e287819fd8d1                                                                   [8283]  
+  .git/objects/11/5c089cf8c13821d07c1835194e9293d0c970e3                                                                   [615]   
   .git/objects/11/c48a5fa6cc5ac411b493a96717da9555027542                                                                   [26085] 
   .git/objects/11/e4e4d6c116d1f5d94002e4dba13d370135705f                                                                   [380393]
   .git/objects/11/ef54f1dd8a580b5945d17a14d2a961bbd1ebc9                                                                   [428]   
@@ -432,6 +436,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/19/6896c58044ecdefe2bc5101fac64b2d8ada84b                                                                   [33823] 
   .git/objects/19/b8b5299eb13f05fdb1cf458e6e90cfa759b9bf                                                                   [1536613]
   .git/objects/19/d2a7e50bb285f418c8eb6b0cccb714a71d1a94                                                                   [58]    
+  .git/objects/1a/209b2fbd9ccec350c5b85049349a1a24e713ee                                                                   [713]   
   .git/objects/1a/4809db19340ce6277c4de7413e4e737358784b                                                                   [6853]  
   .git/objects/1a/52900360866b721f78c40978813835505d99b6                                                                   [44189] 
   .git/objects/1a/6782d8c51da696cc83bc87d9672111772d6ffc                                                                   [13172] 
@@ -458,6 +463,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/1d/0a3ceb878df7c8609d358567dc3a3ecbf0b18f                                                                   [46]    
   .git/objects/1d/209974e082dc26a1cba0faae9b969221376fdf                                                                   [6198]  
   .git/objects/1d/5620e91cf1d716cc151d2f7d7d5ba031022472                                                                   [64170] 
+  .git/objects/1d/5ec3695a25a3e48663980be9f21dd48be72608                                                                   [49802] 
   .git/objects/1d/9bc075fef988c60f7484a5c4aab76acf4d9047                                                                   [18429] 
   .git/objects/1d/b778c45f1040b7eacf828c9df450a64f7932f9                                                                   [2426]  
   .git/objects/1d/d3369339e1c14484dd503553fdb4777fa144f4                                                                   [4685]  
@@ -472,6 +478,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/1f/54d2dc9dc8cac6c49c91011d9bed4c9599f477                                                                   [19143] 
   .git/objects/1f/7c6b47865541fed5694ab3ebc02c91869ca004                                                                   [507]   
   .git/objects/1f/9678c676b3214e452bcfce78c5e26aabd776ce                                                                   [47]    
+  .git/objects/1f/b40d23c9bbaea68fb9ec5b2f16d3837ee6af4e                                                                   [836]   
   .git/objects/1f/c1f0bc79ccd7bc47eb769ed24501f929bdc325                                                                   [88280] 
   .git/objects/1f/cf2d1aa765881631af3f82e1f39e999bd25bff                                                                   [1276]  
   .git/objects/1f/f0c7f09c8a37fa8aa4f84e12c61038db292ae3                                                                   [36155] 
@@ -493,6 +500,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/21/cc81415ffefecaa61832ffe3dc793fba8a5b32                                                                   [282]   
   .git/objects/21/e6fe054908ee22f7cc070b7590ea3717825718                                                                   [132]   
   .git/objects/21/eda89ad99a5bf87545835c7b08c3fba3ee671a                                                                   [339]   
+  .git/objects/21/f3d64928f9aafa307c993eacbb6dec14d20313                                                                   [3578570]
   .git/objects/22/1ffa043c3780e6af7c7dbab8cc2b143a7eb737                                                                   [2424]  
   .git/objects/22/4908fb9ff6ea73e181b95df540ea1ec48483ea                                                                   [2870]  
   .git/objects/22/5a66c335b5267d6d3cd7c20884684098f958d1                                                                   [11788] 
@@ -510,6 +518,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/23/df615ca4fee15559a16ac02ba907957d7e4bbb                                                                   [2873]  
   .git/objects/23/e33534e5131ffc9973b5ae8a1c567e7af679de                                                                   [326]   
   .git/objects/24/1066e42365ebdbdf872345276e136d9961c388                                                                   [23245] 
+  .git/objects/24/1502549a89e79a3481c784a45c9ee421a68d55                                                                   [31364] 
   .git/objects/24/2130350aaed0843c32a6a0849d36445e308b7d                                                                   [1218]  
   .git/objects/24/50e8e4c61ada93a0749a50fa6a45c87302787f                                                                   [21338] 
   .git/objects/24/96ff73b8c5f82bc41de11fa5fec48232e07ca2                                                                   [13716] 
@@ -574,6 +583,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/29/7294f3b51719e87aa73f865e915e6755a68473                                                                   [535]   
   .git/objects/29/9659c5f99c3f112cb36fa315ecf8266dedbb99                                                                   [17523] 
   .git/objects/29/9f1e2da6497a91d140b39e34cb218db407611e                                                                   [467]   
+  .git/objects/2a/15858b95563a08ccde3314b65e5a3d52f0a98d                                                                   [7867]  
   .git/objects/2a/1e1695edcefca19d6c44ba38331ae9d491ad3e                                                                   [45948] 
   .git/objects/2a/30550aebe17ff6628a0033c6207c99262861d6                                                                   [18798] 
   .git/objects/2a/33fd0703198c11756e13461df4bd17cf836a5d                                                                   [4204]  
@@ -590,6 +600,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/2a/aca794170a607879c419a4f657a3cf5cf916dc                                                                   [2429]  
   .git/objects/2a/b081efbdf76743f165b7a6e25c5b456b0dbba4                                                                   [508]   
   .git/objects/2a/b10df9a193992ff5f87a89c9214b58693dedb9                                                                   [47509] 
+  .git/objects/2a/b2cee2b49426260eeed214d067500b9498cd8e                                                                   [56]    
   .git/objects/2a/eeb3be88c4297b62b38318d944c931ef347fe6                                                                   [14209] 
   .git/objects/2b/02c2dead5d38c8cdd785667f8867d84982b6ef                                                                   [6356]  
   .git/objects/2b/1f00d97bd5959fa547d3b932c5ee274a6f43d3                                                                   [28899] 
@@ -658,6 +669,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/31/279fb0a0c3f9d15c5c7af8ae505a6c3db46452                                                                   [27390] 
   .git/objects/31/4107737842581bc678fd591c442f5c0b54731a                                                                   [24905] 
   .git/objects/31/4ba3531ede456ff77fb63772bfda25c33962df                                                                   [30583] 
+  .git/objects/31/e5a483471223f943bd98add2c514debb6aba01                                                                   [7861]  
   .git/objects/32/0a936bd60207d976e9be8660b66f6f6eac04f6                                                                   [2798]  
   .git/objects/32/2cf3e945a0dee49d13dfaef6966ffe8cdb6e13                                                                   [2426]  
   .git/objects/32/616ba069cf4820ffc02e3b37b54eb50144681e                                                                   [60]    
@@ -779,6 +791,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/3d/31957982fcfc4b3247eded8bdb3106fa956118                                                                   [329]   
   .git/objects/3d/4ae565a88f1f97f7d15649c309b77d9256a7c9                                                                   [127]   
   .git/objects/3d/50b893a53ae277874dc814ab895d1397d4cfdd                                                                   [588]   
+  .git/objects/3d/7e9e5e0d4bcda7cf68743783fc702a400faa57                                                                   [324]   
   .git/objects/3d/87d3d0ad337e7ad91d7125e57686fef78c7a7f                                                                   [1913]  
   .git/objects/3d/8cf6ef8c239f8e3fda91a351e4887df5a3eecb                                                                   [9184]  
   .git/objects/3d/a78cd44405ea8cebf54b2c3a5a14e8a444fc17                                                                   [761]   
@@ -942,6 +955,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/4c/c362ff2968a60a753961887bf4bf57a005530f                                                                   [1253]  
   .git/objects/4c/dfdcd25832ab21ee2f961be58b35fada5ef41b                                                                   [374]   
   .git/objects/4c/e228a1e2cce01164953f0e2fb9682a689e0dce                                                                   [501]   
+  .git/objects/4c/f0f3b4d3546db88b55e3866b7fe3ac3680e912                                                                   [4560]  
   .git/objects/4d/00fc32acd4b9311ecd6051bff8430c3de776ed                                                                   [387]   
   .git/objects/4d/206b634893adb794a3a92a20b4152a7dcf27f0                                                                   [15870] 
   .git/objects/4d/698c73e0f543d8582179007d73aeaa46f09c8b                                                                   [3347]  
@@ -974,6 +988,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/50/3695508e54106266db83382088a6c6327d9f27                                                                   [2426]  
   .git/objects/50/66ffa419a9fef9a3f05d15433eae297612843a                                                                   [22701] 
   .git/objects/50/780b6cf52174934e9dbd481639e773f66afdb0                                                                   [4562]  
+  .git/objects/50/82f1a271a7b12f0eeb937e526b25d7bea6cd3d                                                                   [19088] 
   .git/objects/50/955472a29acf613216e2c45f15346642fd259e                                                                   [2420]  
   .git/objects/50/9925406b7c4e94f80d8ec8c4ed2f20bba9801a                                                                   [48]    
   .git/objects/50/cb0725d537c90830fc48c7113b03812f7f555f                                                                   [156]   
@@ -1014,6 +1029,8 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/53/c18513f2173b6a7518de3cbe9dcafedc33a59e                                                                   [50254] 
   .git/objects/53/da2270992c5b88e90e84206c4befd341e44c31                                                                   [479]   
   .git/objects/53/f13c4429c0db5445fd36d115608d16e3e6d255                                                                   [25418] 
+  .git/objects/54/011542622a8f8878037c373f1cae7972d0a0f9                                                                   [148441]
+  .git/objects/54/15948824bb23914d0dc9bb334a9ce4360088f5                                                                   [90]    
   .git/objects/54/808638f69964608b4ea7df18d171c47a60c727                                                                   [48]    
   .git/objects/54/8e51834bb97a0322d56a788953896c539e7201                                                                   [1767]  
   .git/objects/54/baf204eb1cacdc7549a9d13b4868159b2c4685                                                                   [657]   
@@ -1024,6 +1041,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/54/f3223838f98a54d61a265ae404bb7055d36f28                                                                   [2429]  
   .git/objects/55/15deb40ac9141ff092490b20788ac0513f0b3c                                                                   [449]   
   .git/objects/55/1cd9d7cf3a9d9e17c56841f3fba61030eb2e07                                                                   [2538]  
+  .git/objects/55/1d209a0bf3dd1a3887c98851d1f76e8f6e28ce                                                                   [468]   
   .git/objects/55/2986aed9c535901417a118ed903a17f2e402a3                                                                   [1404]  
   .git/objects/55/2d1eff0838d9848ad2258fb5a9fd8ab1a191bc                                                                   [2422]  
   .git/objects/55/53b12e90d827e35db92a1ceafc2eba1893b15a                                                                   [40256] 
@@ -1077,6 +1095,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/5a/d598bc0d67a0fa67f0cd8e2398d61935d12ae1                                                                   [1856]  
   .git/objects/5a/d70d3069811b80e59dd6bfa7119d2267c8593e                                                                   [427]   
   .git/objects/5a/de7a08423263d824bf44102739ddbf2e146fc7                                                                   [47959] 
+  .git/objects/5a/e4206dea79e20305ea6592c249d09ce1e571b8                                                                   [31155] 
   .git/objects/5a/ed715bc124fbb78d0dcbb8d43850360bb58565                                                                   [1233]  
   .git/objects/5a/f4633150bfcc9f9b4d50e6397a8acba9cc908a                                                                   [340]   
   .git/objects/5b/095bb6cbd8affeac476f13c54cbfab8fcf7950                                                                   [409]   
@@ -1180,6 +1199,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/63/55d4725547faa91f7be341746ac56f5c76f497                                                                   [21333] 
   .git/objects/63/70ab70e9c1548b0bcb7afc851bc1d3a989b5c4                                                                   [30053] 
   .git/objects/63/953a8e85f88a639734bb7b953949096461de83                                                                   [467]   
+  .git/objects/63/d5d5c9e32b450621c4f52357897aaa191f02fd                                                                   [57]    
   .git/objects/64/10b9db49100be7c9977e86899a57e143a66657                                                                   [1056]  
   .git/objects/64/1a28b13eab52efbd1745eda162fc3c647c5ce4                                                                   [2425]  
   .git/objects/64/563f697805c163b14db981800416414a427aed                                                                   [640]   
@@ -1189,6 +1209,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/64/c89385517543fb7c61b2237c926d871391d73b                                                                   [2420]  
   .git/objects/64/d711276e3f09bd67abaeec5449f848f33daf9c                                                                   [2019]  
   .git/objects/65/0feab42ded652bb5535fcd8658d0024edd903a                                                                   [642]   
+  .git/objects/65/1a69429920096c66f184719e39038e2a6a0672                                                                   [58]    
   .git/objects/65/1c310b838b37133c2f90a0641adfd1145177d4                                                                   [430]   
   .git/objects/65/2f4a0f85ec848a025e27c57f32fe4e0ce2049c                                                                   [6240]  
   .git/objects/65/5a4c77a89d15b2cb85f6d4ff99d21e6a4a16a5                                                                   [2429]  
@@ -1288,6 +1309,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/6e/a2affb9370cbff3bd7b84a087f20acb40df45c                                                                   [77]    
   .git/objects/6e/a609f8bc73c94c23aef10bf03c51db63a706ac                                                                   [5215]  
   .git/objects/6e/e34bed9e9f8dd4a684b458d9d450023d445519                                                                   [6335]  
+  .git/objects/6e/f7dc566cacb0d48d1442dae77cc0e0a550e004                                                                   [4533]  
   .git/objects/6f/3ba50e2f2e6cde9c028cdc7d3ec9d04ffaa287                                                                   [7872]  
   .git/objects/6f/8ebb821dc02e8d21b7ea13c44cad6ec6a831f1                                                                   [12881] 
   .git/objects/6f/9db19b78f7e3b84b0d9fce5aff000055adf89e                                                                   [10872] 
@@ -1382,11 +1404,14 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/77/efbe48876fe24631d03ffeb32cb4381090deca                                                                   [25411] 
   .git/objects/77/fb8611fdffe7341e370ad6cd6da9d9ddd8b1d6                                                                   [40118] 
   .git/objects/78/1fc69e017465d882d03a0d6e20c88fac4208b7                                                                   [2429]  
+  .git/objects/78/564962231e8be189628e1129fd8255cf563ffd                                                                   [1492745]
   .git/objects/78/598883c74278ea0fed04cb60e9d3faaffadbc1                                                                   [90]    
   .git/objects/78/5b48ab8b9b8482eb2e284f7f1e3ce7a604c996                                                                   [81]    
   .git/objects/78/8167132b9c0c987417e57d8ae1f6e0e487fb9b                                                                   [4459]  
   .git/objects/78/891a406dba24640fa2b400eecef14273a23844                                                                   [835]   
   .git/objects/78/8a0caf0798330c452b03696e320eed7b4695c8                                                                   [427]   
+  .git/objects/78/9e39ae4381a711f6c0923c0cb9fdfd1b7ad983                                                                   [158235]
+  .git/objects/78/a4de8a7c7343d0da82e2ee3719738ded161dd1                                                                   [179]   
   .git/objects/78/d1e6ae45a87fcd8e8bb8a512a242c644ee1702                                                                   [608]   
   .git/objects/78/e344340f409387980d5fa726e982ce7af7e505                                                                   [485]   
   .git/objects/78/f54bd67249bd3c3b12187d828a8aaa5c9a1395                                                                   [2415]  
@@ -1655,6 +1680,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/91/62f5d5716f1a13e5db41ab7d50798a0a945a11                                                                   [30956] 
   .git/objects/91/6e6b15964b8a754c73a45ddd42e3d4689ff2ca                                                                   [11049] 
   .git/objects/91/723582a40783027a2ac187324f35e1758567a3                                                                   [639]   
+  .git/objects/91/813b45eeb33c6c7ad55f7c5987e89fc2aa2b47                                                                   [87]    
   .git/objects/91/86f9337e3457f63d796fc78ff7f7aae83a37b8                                                                   [429]   
   .git/objects/91/94a0986d651cc659d3d5592db22f6f86d4178d                                                                   [564]   
   .git/objects/91/a8fdaea1f489341681c0041d4b8e881418e71b                                                                   [14163] 
@@ -1666,6 +1692,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/92/39e130420613f6c1e6cb63b32494c89c03ec1f                                                                   [22952] 
   .git/objects/92/571aeba77fa42120a1ebe7b018d6cf9d42423a                                                                   [372]   
   .git/objects/92/678376bdb7c7bb664c625bdc8e0422cc3c71be                                                                   [18994] 
+  .git/objects/92/6cd4cd48ab830b3b12f40b78f92c5c277a4d10                                                                   [30202] 
   .git/objects/92/79e0d3fb71d1d2ad42d78c7c51eaaa7d4a5084                                                                   [330]   
   .git/objects/92/7b3738be31c743e176ca6e813678f5e853e595                                                                   [17334] 
   .git/objects/92/adca480e014d290a168db4b64377197a2fea3e                                                                   [48552] 
@@ -1919,6 +1946,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/aa/f4d1460bface350ec04721660d8bd2f581495d                                                                   [632]   
   .git/objects/ab/181d1786d55207a0ea51dc9c588c3b78d345ee                                                                   [614]   
   .git/objects/ab/1bb15c7f236627d56a78491c1faa2e7c0888cc                                                                   [33163] 
+  .git/objects/ab/819abc0fb08bfc3f9abed607c9dcc55e6f5443                                                                   [13168] 
   .git/objects/ab/e01a2758f3edc6bbe8e83f1732c6288b271a95                                                                   [298]   
   .git/objects/ac/0d4c77bd63cb860e1aba1c207f8a8e055f952a                                                                   [27543] 
   .git/objects/ac/2dbae23891bdc4ba804aa20846288cf88b3695                                                                   [80744] 
@@ -1973,6 +2001,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/b1/1baaebd6a568b9fa1d0060b368025bfd5cf5b7                                                                   [429]   
   .git/objects/b1/216c697c190f29e0dbaf5cc4a12636a3c4f71b                                                                   [1344]  
   .git/objects/b1/221e4c719970fa993294aa1aac3898235b9c49                                                                   [2429]  
+  .git/objects/b1/3e3f0e88a62bbbb7b20a30c7e252c84e8b7885                                                                   [2508241]
   .git/objects/b1/629d1fb880b9fdd8c26b9bc1ea3d7766fd702b                                                                   [2428]  
   .git/objects/b1/8ce672dbeb66eeea7915510757d6573298833b                                                                   [2367]  
   .git/objects/b1/9be8c620e35abd79144ce2318859206cb273e9                                                                   [37826] 
@@ -1986,6 +2015,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/b2/7f0709c6a12c170913f6e683ef07e340ee2183                                                                   [51]    
   .git/objects/b2/9bb93fdd9f3f0f386aadd6ae10405350126d73                                                                   [5963]  
   .git/objects/b2/bdb35b642501bdfd9d6243875310105ce1c630                                                                   [458]   
+  .git/objects/b2/cdbcfcdf28a21f2c9cd32a0920392ab6e5bc69                                                                   [122]   
   .git/objects/b2/d15b04c47734ff02400b729405b5f462355811                                                                   [47790] 
   .git/objects/b2/d3a84eeda5d878c62080a09cb365d29513ef84                                                                   [27599] 
   .git/objects/b3/16a8fdc96a1660ff9fc487213d044fe1732cc1                                                                   [54729] 
@@ -2136,6 +2166,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/c0/d39f755cca2f08ba327e4f1d38e5f7cd90ee87                                                                   [5050]  
   .git/objects/c0/daa079c99437771bdb0448f59222509ad3ad11                                                                   [11066332]
   .git/objects/c0/e418e37adeee69efa7fd69ea3bb9f12f0355b5                                                                   [7237]  
+  .git/objects/c0/ea19737f2c1820762a49bca6cf5222bb47b9c5                                                                   [48793] 
   .git/objects/c1/743825abda24b2ec5d01f6458cb583e95c4eb3                                                                   [1774]  
   .git/objects/c1/815239e09aad3c32100ee1a00cd6049d479da0                                                                   [396]   
   .git/objects/c1/c3559c15e2b7e25b3281c18aba544e20982c01                                                                   [363]   
@@ -2182,6 +2213,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/c5/328aa86d3b9a7c70a86b534503698d15adce43                                                                   [23332] 
   .git/objects/c5/78dca79acaffc24eb2ce672691ef6992b70746                                                                   [1353]  
   .git/objects/c5/89ce6a61b45fe81d5db85e8ede10c5e074e79b                                                                   [1475]  
+  .git/objects/c5/8f7eac0ec43485d4a49400589201407da678fb                                                                   [339]   
   .git/objects/c5/9c43696e79e71effe0f59d9d50802c4639c8b4                                                                   [33084] 
   .git/objects/c5/e240291cadaae55291ba087a9d2af84ab4f3f5                                                                   [6424]  
   .git/objects/c5/fa466119e9fd5fc76988124a2cfeb96f28fda9                                                                   [19756] 
@@ -2245,6 +2277,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/ca/816525bf38ab19566081ae33110e4377eca69a                                                                   [2427]  
   .git/objects/ca/a4b3a3766b8dd25400b5f591f87a8c06dc8c9c                                                                   [1367398]
   .git/objects/ca/b899cc9b8f92c14d12afd7247b9b1ac4c3c296                                                                   [520]   
+  .git/objects/ca/bee1ec4cd3a71620ce39fb9261cac3cdee9c07                                                                   [72]    
   .git/objects/ca/dc2c861bf8a5e528a23588ad8e74528743c2ce                                                                   [326]   
   .git/objects/ca/fa1192a88ef968454c7c728d91f459ac864493                                                                   [7864]  
   .git/objects/cb/22fd6d716051a2ea9d964867e57ba3d2949d99                                                                   [50]    
@@ -2305,6 +2338,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/d0/885fcb975513865d0de00d67e88c63eb64bcfa                                                                   [18499] 
   .git/objects/d0/a514ec5b020b5d9772fde4e34f69b7dc2ab8ae                                                                   [17421577]
   .git/objects/d0/b85796bbc9f4f09b0a2cd20496c35c8597c153                                                                   [351]   
+  .git/objects/d0/e0d75d9b2ffd495e5533c0c5ce185f4f4c1617                                                                   [423]   
   .git/objects/d0/f3ff7a8a45d4995ba7c2f6f94a414173bd2657                                                                   [12727] 
   .git/objects/d0/fb324474070f041164488e420c7f27e6e9da95                                                                   [1342]  
   .git/objects/d1/1ae3a13ef8f7bd04dd7afa704f9cda361e379c                                                                   [15680] 
@@ -2366,6 +2400,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/d5/6b4d16b2624996bc41f6b5dfe5178a6b95a18e                                                                   [140345]
   .git/objects/d5/b4bbe7356ecbdd5ca7d7b685fd00b72a2d848c                                                                   [4389]  
   .git/objects/d5/d9f2f664a7735b0c69f408ab6beddf12deca2f                                                                   [382]   
+  .git/objects/d6/425c734d6f937ca22c614fbf04f6317a3f79ed                                                                   [47]    
   .git/objects/d6/7020be4083bb9ffe8022718cab60cbd59918f8                                                                   [47]    
   .git/objects/d6/7962f9993e8f0fc969a3f17067e1a1ab54b0da                                                                   [14721] 
   .git/objects/d6/92c3120c776257b10e86485ee8c5310484baa1                                                                   [3318]  
@@ -2410,12 +2445,14 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/da/9a2b05ffa6dedb1061775929bcb87de14d3208                                                                   [319]   
   .git/objects/da/a3a1ba434b11b348c3a5294c2a736ffd982a4b                                                                   [1238]  
   .git/objects/da/b8fdd3c29207f6a888218a2e80c9f028a88bf5                                                                   [389]   
+  .git/objects/da/cb314682da6001e4082e1906b1f414613d1fdb                                                                   [60]    
   .git/objects/da/ccf03e44d81e7601b2a9b2fded2e117749eea6                                                                   [389]   
   .git/objects/da/de1d37035110410c12d4666be0879babda2f42                                                                   [16272] 
   .git/objects/da/e1df10670b91a8d02d3b26b0e1259678af2aa3                                                                   [899]   
   .git/objects/da/fe1e8f7dc4aed879d5f89b58618fa5afd8da3e                                                                   [21985] 
   .git/objects/db/121e40cc4a7086fa381282c5a391b823f6b833                                                                   [313]   
   .git/objects/db/31e408b7fd79cdb4c350cb5745529b09f463dd                                                                   [57]    
+  .git/objects/db/36be31a07f48250c9bad5423b3370fcf98b045                                                                   [50]    
   .git/objects/db/45b1c59b77219d0cab80c138e1dd04524ba848                                                                   [2427]  
   .git/objects/db/6b6b3eb5428f7d075b3c7b5c8e67ad3d18d0f5                                                                   [20434] 
   .git/objects/db/c0232c2f21a2302637f3303a186625303aa01a                                                                   [344]   
@@ -2444,9 +2481,11 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/dd/6ec93ea33728ce1b6366fd42edc21ae97c5a38                                                                   [26222] 
   .git/objects/dd/71bf452e8e8bba9bc0bd825cfd6453d31e89d4                                                                   [2429]  
   .git/objects/dd/722fe89d45e2a60cfd0d463c01c57318277921                                                                   [1368466]
+  .git/objects/dd/7c47c78ed5630520840d6889b7ca0938603bb1                                                                   [383]   
   .git/objects/dd/803e93d1f424a697b983e5f76ce8b94b260168                                                                   [725]   
   .git/objects/dd/8b535d60fcd26f3dd116d7f78c86c46133d0f5                                                                   [33]    
   .git/objects/dd/9016f3b795845011cb1e06d4127a271a9b6bb1                                                                   [2432]  
+  .git/objects/de/0215036b4b42c0146a25f2d16dd1183daff531                                                                   [30362] 
   .git/objects/de/12812eff55e59bfea15193a27ecd4a70cdc103                                                                   [20038] 
   .git/objects/de/1e09178053d84e9d5c5c94c83783c621437499                                                                   [97]    
   .git/objects/de/4c1c5fc7075daf6a25a8de0db98e7494cd1d66                                                                   [22899] 
@@ -2454,6 +2493,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/de/6d3e4671ee013514a6c041c79b7709ec6ba89d                                                                   [49925] 
   .git/objects/de/8dbf3aa209b840561be1603cd1f3d962df9373                                                                   [2430]  
   .git/objects/de/9d6bab1dc1a78bfe921fc9eea2999f31c9ca8d                                                                   [338]   
+  .git/objects/de/a66d902767bf3ee776cb8a6356c05ee42fe9e5                                                                   [135]   
   .git/objects/de/bc5075fb53550ca1b4c3d42790e33b3f6bdfab                                                                   [4613]  
   .git/objects/de/c109b521dba27069cd7ee41930e00af23f6b2b                                                                   [3410]  
   .git/objects/de/cc4ad8794b13b05ffec330c00f1b45baba922b                                                                   [421]   
@@ -2588,6 +2628,8 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/eb/fe983af2ab8ca5b17933db3fd1f9fb59916972                                                                   [10964] 
   .git/objects/ec/02f79749d046036615281b0f70d368f404ee2b                                                                   [2423]  
   .git/objects/ec/11525761965ac16e43e2755d3d45f4f5fa6202                                                                   [6951]  
+  .git/objects/ec/23ea7d7e5fece093699c2683a366891b9ee47c                                                                   [390]   
+  .git/objects/ec/2f87f492fd81d4cfd3bdd10a9631dc06ae309d                                                                   [807]   
   .git/objects/ec/2f8b77d94938dd16f7850ffe746bf78519b116                                                                   [2431]  
   .git/objects/ec/325bbdc11108ff98ccc8c6b4af5eb5de8aefe0                                                                   [201]   
   .git/objects/ec/49c1a064ce15dfb4a7845bb593c78f9508875a                                                                   [40652] 
@@ -2723,7 +2765,9 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/f8/23b041bb8819d9bc4266690e9507ac08ed2733                                                                   [5800]  
   .git/objects/f8/37ad3a76517f526ecd248be53cc655fd462091                                                                   [1330]  
   .git/objects/f8/7bbebed2f0d3e88a760021fb981e12bb0b4969                                                                   [2430]  
+  .git/objects/f8/897de878aefb524adc4d7dc1e96ea02903b55f                                                                   [17161264]
   .git/objects/f8/a049993cd1993ff986238a06f2114200fcba0b                                                                   [388]   
+  .git/objects/f8/d027d310924b8e945ee109b566e983497b68fc                                                                   [4541]  
   .git/objects/f8/df622272427097364beef46652912fe6be33a1                                                                   [85755] 
   .git/objects/f8/f05f770fa82b430ca669808a177b636838974e                                                                   [2421]  
   .git/objects/f9/0f3518282d197f72f87ee20c5175a494021c04                                                                   [424]   
@@ -2789,11 +2833,13 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   .git/objects/fe/4e10e2b34bc053fe030f45f16c7707d277033e                                                                   [4132]  
   .git/objects/fe/5d5083d0f53a87324c4d0cb877a4b6b3171d92                                                                   [3963]  
   .git/objects/fe/5df7bbcef2feaa746b6a527057d00e8b8726ac                                                                   [2429]  
+  .git/objects/fe/8dbb39a0e5bf280d9e9f6d2e776fe5046c9c6e                                                                   [17314] 
   .git/objects/fe/a2bc57638547240bca42db2591482dc967c7f7                                                                   [47970] 
   .git/objects/fe/d8251daa13d92c9f9c4fcaabec9184cd45113b                                                                   [1105]  
   .git/objects/fe/f566addaff4dcd77977622f10075e54338c160                                                                   [3324]  
   .git/objects/ff/298c371ed9237897873d94ab546a82a6e948ba                                                                   [6061]  
   .git/objects/ff/7361e4182126028de67f2e1441985d6444f3e3                                                                   [2426]  
+  .git/objects/ff/74c27ea4c590e7a7f48291e108f2226f877034                                                                   [1438]  
   .git/objects/ff/751116e9bc042c54031886d4c7fabcf66db56b                                                                   [926]   
   .git/objects/ff/7cecd120c435ef56ed4858dd2331667515625a                                                                   [1998]  
   .git/objects/ff/80649b7cccb9a62c7241b7c96a04f0318c47d3                                                                   [9259]  
@@ -2815,7 +2861,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   build/iphone/main.m                                                                                                      [1579]  
   build/iphone/module.xcconfig                                                                                             [43]    
   build/iphone/project.xcconfig                                                                                            [299]   
-  build/iphone/build/build.log                                                                                             [356314]
+  build/iphone/build/build.log                                                                                             [362392]
   build/iphone/Classes/AccelerometerModule.h                                                                               [459]   
   build/iphone/Classes/AccelerometerModule.m                                                                               [1265]  
   build/iphone/Classes/AnalyticsModule.h                                                                                   [543]   
@@ -3383,12 +3429,14 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   build/iphone/lib/libti_ios_debugger.a                                                                                    [3938068]
   build/iphone/lib/libTiCore.a                                                                                             [197256772]
   build/iphone/lib/libtiverify.a                                                                                           [307692]
+  build/iphone/Resources/.version                                                                                          [162]   
   build/iphone/Resources/appicon.png                                                                                       [4275]  
   build/iphone/Resources/debugger.plist                                                                                    [260]   
   build/iphone/Resources/Default-Landscape.png                                                                             [517419]
   build/iphone/Resources/Default-Portrait.png                                                                              [551670]
   build/iphone/Resources/Default.png                                                                                       [114262]
   build/iphone/Resources/Default@2x.png                                                                                    [380255]
+  build/iphone/Resources/Entitlements.plist                                                                                [227]   
   build/iphone/Resources/stylesheet.plist                                                                                  [132]   
   build/iphone/Resources/iphone/appicon.png                                                                                [4275]  
   build/iphone/Resources/iphone/Default-Landscape.png                                                                      [517419]
@@ -3439,7 +3487,7 @@ File listing for /Users/thesargenator/Titanium/KnightFinder
   Resources/main_windows/kfVoucher.js                                                                                      [6527]  
   Resources/main_windows/kfWebView.js                                                                                      [408]   
 ----------------------------------------------------------------------------------------------------------------------------------
-Total files: 492.0 MB
+Total files: 518.0 MB
 
 Contents of Info.plist
 
@@ -3483,7 +3531,7 @@ Contents of Info.plist
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>3.3.1315762265</string>
+	<string>3.3.1315768623</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
         <key>UISupportedInterfaceOrientations~ipad</key>
@@ -4250,7 +4298,7 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] (46.79% IDAT increase)
 [DEBUG] (44.46% filesize increase)
 [DEBUG] CPU time used = 0.004 seconds (decoding 0.000,
-[DEBUG] encoding 0.001, other 0.003 seconds)
+[DEBUG] encoding 0.000, other 0.003 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/appicon.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4299,8 +4347,8 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Default-Landscape-pngcrush.png
 [DEBUG] (5.26% IDAT increase)
 [DEBUG] (5.27% filesize increase)
-[DEBUG] CPU time used = 2.382 seconds (decoding 0.020,
-[DEBUG] encoding 2.342, other 0.020 seconds)
+[DEBUG] CPU time used = 2.352 seconds (decoding 0.021,
+[DEBUG] encoding 2.311, other 0.020 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Default-Landscape.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4324,8 +4372,8 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Default-Portrait-pngcrush.png
 [DEBUG] (5.26% IDAT increase)
 [DEBUG] (5.27% filesize increase)
-[DEBUG] CPU time used = 2.198 seconds (decoding 0.021,
-[DEBUG] encoding 2.155, other 0.021 seconds)
+[DEBUG] CPU time used = 2.192 seconds (decoding 0.023,
+[DEBUG] encoding 2.149, other 0.021 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Default-Portrait.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4349,8 +4397,8 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Default-pngcrush.png
 [DEBUG] (25.56% IDAT increase)
 [DEBUG] (25.49% filesize increase)
-[DEBUG] CPU time used = 0.033 seconds (decoding 0.004,
-[DEBUG] encoding 0.022, other 0.007 seconds)
+[DEBUG] CPU time used = 0.032 seconds (decoding 0.004,
+[DEBUG] encoding 0.021, other 0.007 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Default.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4374,8 +4422,8 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Default@2x-pngcrush.png
 [DEBUG] (21.35% IDAT increase)
 [DEBUG] (21.33% filesize increase)
-[DEBUG] CPU time used = 0.107 seconds (decoding 0.013,
-[DEBUG] encoding 0.077, other 0.017 seconds)
+[DEBUG] CPU time used = 0.110 seconds (decoding 0.013,
+[DEBUG] encoding 0.080, other 0.017 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Default@2x.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4399,8 +4447,8 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Icon-72-pngcrush.png
 [DEBUG] (36.87% IDAT increase)
 [DEBUG] (35.56% filesize increase)
-[DEBUG] CPU time used = 0.004 seconds (decoding 0.000,
-[DEBUG] encoding 0.001, other 0.003 seconds)
+[DEBUG] CPU time used = 0.005 seconds (decoding 0.000,
+[DEBUG] encoding 0.001, other 0.004 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Icon-72.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4424,7 +4472,7 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Icon-pngcrush.png
 [DEBUG] (46.79% IDAT increase)
 [DEBUG] (44.46% filesize increase)
-[DEBUG] CPU time used = 0.004 seconds (decoding 0.000,
+[DEBUG] CPU time used = 0.003 seconds (decoding 0.000,
 [DEBUG] encoding 0.000, other 0.003 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Icon.png
 [DEBUG] | pngcrush 1.6.4
@@ -4449,8 +4497,8 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Icon@2x-pngcrush.png
 [DEBUG] (30.62% IDAT increase)
 [DEBUG] (29.97% filesize increase)
-[DEBUG] CPU time used = 0.006 seconds (decoding 0.000,
-[DEBUG] encoding 0.002, other 0.003 seconds)
+[DEBUG] CPU time used = 0.006 seconds (decoding 0.001,
+[DEBUG] encoding 0.002, other 0.004 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/Icon@2x.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4668,7 +4716,7 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] (2.27% IDAT reduction)
 [DEBUG] (0.56% filesize reduction)
 [DEBUG] CPU time used = 0.003 seconds (decoding 0.000,
-[DEBUG] encoding 0.000, other 0.003 seconds)
+[DEBUG] encoding 0.000, other 0.002 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LoginNormal.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4763,7 +4811,7 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LoginWithFacebookNormal-pngcrush.png
 [DEBUG] (14.54% IDAT reduction)
 [DEBUG] (7.52% filesize reduction)
-[DEBUG] CPU time used = 0.005 seconds (decoding 0.000,
+[DEBUG] CPU time used = 0.004 seconds (decoding 0.000,
 [DEBUG] encoding 0.001, other 0.003 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LoginWithFacebookNormal.png
 [DEBUG] | pngcrush 1.6.4
@@ -4812,7 +4860,7 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] (15.73% IDAT reduction)
 [DEBUG] (8.20% filesize reduction)
 [DEBUG] CPU time used = 0.005 seconds (decoding 0.000,
-[DEBUG] encoding 0.001, other 0.004 seconds)
+[DEBUG] encoding 0.001, other 0.003 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LoginWithFacebookPressed.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4835,7 +4883,7 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LoginWithFacebookPressed@2x-pngcrush.png
 [DEBUG] (11.81% IDAT reduction)
 [DEBUG] (8.36% filesize reduction)
-[DEBUG] CPU time used = 0.011 seconds (decoding 0.001,
+[DEBUG] CPU time used = 0.010 seconds (decoding 0.001,
 [DEBUG] encoding 0.006, other 0.004 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LoginWithFacebookPressed@2x.png
 [DEBUG] | pngcrush 1.6.4
@@ -4883,8 +4931,8 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LogoutNormal@2x-pngcrush.png
 [DEBUG] (18.83% IDAT increase)
 [DEBUG] (10.27% filesize increase)
-[DEBUG] CPU time used = 0.006 seconds (decoding 0.000,
-[DEBUG] encoding 0.002, other 0.004 seconds)
+[DEBUG] CPU time used = 0.005 seconds (decoding 0.000,
+[DEBUG] encoding 0.002, other 0.003 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LogoutNormal@2x.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4907,7 +4955,7 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LogoutPressed-pngcrush.png
 [DEBUG] (3.12% IDAT increase)
 [DEBUG] (0.51% filesize increase)
-[DEBUG] CPU time used = 0.002 seconds (decoding 0.000,
+[DEBUG] CPU time used = 0.001 seconds (decoding 0.000,
 [DEBUG] encoding 0.000, other 0.001 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/facebook/images/LogoutPressed.png
 [DEBUG] | pngcrush 1.6.4
@@ -5009,17 +5057,17 @@ PhaseScriptExecution Pre-Compile build/KnightFinder.build/Debug-iphoneos/KnightF
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.app/modules/ui/images/photoDefault.png
 Showing first 200 notices only
 
-ProcessPCH /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-cncxmouzsaujpsfbqnflgrnugbcq/KnightFinder_Prefix.pch.gch KnightFinder_Prefix.pch normal armv7 c com.apple.compilers.gcc.4_2
-    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/KnightFinder_Prefix.pch -o /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-cncxmouzsaujpsfbqnflgrnugbcq/KnightFinder_Prefix.pch.gch
-
 ProcessPCH /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-heemwtspqkltaqbrgduuxwccuvji/KnightFinder_Prefix.pch.gch KnightFinder_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/KnightFinder_Prefix.pch -o /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-heemwtspqkltaqbrgduuxwccuvji/KnightFinder_Prefix.pch.gch
+
+ProcessPCH /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-cncxmouzsaujpsfbqnflgrnugbcq/KnightFinder_Prefix.pch.gch KnightFinder_Prefix.pch normal armv7 c com.apple.compilers.gcc.4_2
+    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/KnightFinder_Prefix.pch -o /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-cncxmouzsaujpsfbqnflgrnugbcq/KnightFinder_Prefix.pch.gch
 
 ProcessPCH++ /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-fxwimfmxdryizadqjsbcrpfdpxjg/KnightFinder_Prefix.pch.gch KnightFinder_Prefix.pch normal armv7 objective-c++ com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
@@ -6104,17 +6152,17 @@ CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-norm
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ervjmuhbtgwczefknglcgwyehojl/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/CADebugMacros.cpp -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/CADebugMacros.o
 
-CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/CAXException.o Classes/CAXException.cpp normal armv7 c++ com.apple.compilers.gcc.4_2
-    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ervjmuhbtgwczefknglcgwyehojl/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/CAXException.cpp -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/CAXException.o
-
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/CAStreamBasicDescription.o Classes/CAStreamBasicDescription.cpp normal armv7 c++ com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ervjmuhbtgwczefknglcgwyehojl/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/CAStreamBasicDescription.cpp -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/CAStreamBasicDescription.o
+
+CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/CAXException.o Classes/CAXException.cpp normal armv7 c++ com.apple.compilers.gcc.4_2
+    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ervjmuhbtgwczefknglcgwyehojl/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/CAXException.cpp -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/CAXException.o
 
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/TiUIPickerProxy.o Classes/TiUIPickerProxy.m normal armv7 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
@@ -6598,17 +6646,17 @@ CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-norm
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-heemwtspqkltaqbrgduuxwccuvji/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/TiFacebookRequest.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/TiFacebookRequest.o
 
-CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/FBDialog.o Classes/FBConnect/FBDialog.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-heemwtspqkltaqbrgduuxwccuvji/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/FBConnect/FBDialog.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/FBDialog.o
-
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/Facebook.o Classes/FBConnect/Facebook.m normal armv7 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-heemwtspqkltaqbrgduuxwccuvji/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/FBConnect/Facebook.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/Facebook.o
+
+CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/FBDialog.o Classes/FBConnect/FBDialog.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv7 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-heemwtspqkltaqbrgduuxwccuvji/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/FBConnect/FBDialog.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/FBDialog.o
 
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv7/FBLoginButton.o Classes/FBConnect/FBLoginButton.m normal armv7 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
@@ -6723,6 +6771,18 @@ CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-norm
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-gkxeanxxqajdumdpabqtokhtfpck/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/Base64Transcoder.c -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/Base64Transcoder.o
+
+ProcessPCH++ /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch.gch KnightFinder_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/KnightFinder_Prefix.pch -o /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch.gch
+
+ProcessPCH++ /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-attljfzyhripvdbfxykhzkqaisus/KnightFinder_Prefix.pch.gch KnightFinder_Prefix.pch normal armv6 c++ com.apple.compilers.gcc.4_2
+    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++-header -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/KnightFinder_Prefix.pch -o /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-attljfzyhripvdbfxykhzkqaisus/KnightFinder_Prefix.pch.gch
 
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/TiUITableViewAction.o Classes/TiUITableViewAction.m normal armv6 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
@@ -6883,17 +6943,26 @@ CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-norm
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-gkiznrghjbsapycnvpuqofbublxn/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/SBJSON.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/SBJSON-D3E5F9E305C04645.o
 
-ProcessPCH++ /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch.gch KnightFinder_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollBridge.o Classes/KrollBridge.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/KnightFinder_Prefix.pch -o /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch.gch
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollBridge.mm -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollBridge.o
+/Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollBridge.mm: In function 'KrollBridge* +[KrollBridge krollBridgeForThreadName:](objc_object*, objc_selector*, NSString*)':
+/Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollBridge.mm:903: warning: 'KrollContext' may not respond to '-threadName'
+/Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollBridge.mm:903: warning: (Messages without a matching method signature
 
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollCallback.o Classes/KrollCallback.m normal armv6 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-gkiznrghjbsapycnvpuqofbublxn/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollCallback.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollCallback.o
+
+CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollContext.o Classes/KrollContext.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollContext.mm -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollContext.o
 
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollMethod.o Classes/KrollMethod.m normal armv6 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
@@ -6948,21 +7017,6 @@ CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-norm
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-gkiznrghjbsapycnvpuqofbublxn/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollPropertyDelegate.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollPropertyDelegate.o
-
-CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollBridge.o Classes/KrollBridge.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
-    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollBridge.mm -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollBridge.o
-/Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollBridge.mm: In function 'KrollBridge* +[KrollBridge krollBridgeForThreadName:](objc_object*, objc_selector*, NSString*)':
-/Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollBridge.mm:903: warning: 'KrollContext' may not respond to '-threadName'
-/Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollBridge.mm:903: warning: (Messages without a matching method signature
-
-CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollContext.o Classes/KrollContext.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
-    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/KrollContext.mm -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollContext.o
 
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/KrollTimer.o Classes/KrollTimer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
@@ -7771,24 +7825,6 @@ CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-norm
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/TiMediaAudioRecorderProxy.mm -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/TiMediaAudioRecorderProxy.o
 
-ProcessPCH++ /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-attljfzyhripvdbfxykhzkqaisus/KnightFinder_Prefix.pch.gch KnightFinder_Prefix.pch normal armv6 c++ com.apple.compilers.gcc.4_2
-    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++-header -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/KnightFinder_Prefix.pch -o /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-attljfzyhripvdbfxykhzkqaisus/KnightFinder_Prefix.pch.gch
-
-CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/AQRecorder.o Classes/AQRecorder.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
-    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/AQRecorder.mm -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/AQRecorder.o
-
-CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/SCListener.o Classes/SCListener.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-gkiznrghjbsapycnvpuqofbublxn/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/SCListener.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/SCListener.o
-
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/CADebugMacros.o Classes/CADebugMacros.cpp normal armv6 c++ com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
     setenv LANG en_US.US-ASCII
@@ -7806,6 +7842,18 @@ CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-norm
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-attljfzyhripvdbfxykhzkqaisus/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/CAXException.cpp -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/CAXException.o
+
+CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/AQRecorder.o Classes/AQRecorder.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -fvisibility-inlines-hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-ecjuwzjlmlcvutdyyjqcjhwhegnq/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/AQRecorder.mm -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/AQRecorder.o
+
+CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/SCListener.o Classes/SCListener.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+    cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wunused-function -DDEPLOYTYPE=test -DTI_TEST=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=3.1 -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-generated-files.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-own-target-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-all-target-headers.hmap -iquote /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/KnightFinder-project-headers.hmap -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources/armv6 -I/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/DerivedSources -F/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos -DDEBUG -DTI_POST_1_2 -include /var/folders/5k/qdc1sbrs63l7fztl18606hs80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/KnightFinder_Prefix-gkiznrghjbsapycnvpuqofbublxn/KnightFinder_Prefix.pch -c /Users/thesargenator/Titanium/KnightFinder/build/iphone/Classes/SCListener.m -o /Users/thesargenator/Titanium/KnightFinder/build/iphone/build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/SCListener.o
 
 CompileC build/KnightFinder.build/Debug-iphoneos/KnightFinder.build/Objects-normal/armv6/TiMediaAudioSession.o Classes/TiMediaAudioSession.m normal armv6 objective-c com.apple.compilers.gcc.4_2
     cd /Users/thesargenator/Titanium/KnightFinder/build/iphone
