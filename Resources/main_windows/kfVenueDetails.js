@@ -37,6 +37,20 @@ win = Titanium.UI.currentWindow;
 win.title = appTitle;
 win.backgroundColor = 'stripped';
 
+String.prototype.truncate = function(length) {
+
+  if (this.length > length) {
+
+    return this.slice(0, length - 3) + "...";
+
+  } else {
+
+    return this.slice(0, this.length);
+
+  }
+};
+
+
 //Load the venue Header view
 
 scrollView = Titanium.UI.createScrollView({
@@ -121,7 +135,7 @@ lblWeb = Titanium.UI.createLabel({
 	textAlign : 'right'
 });
 lblWebAddress = Titanium.UI.createLabel({
-	text : win.venueWeb,
+	text : win.venueWeb.truncate(28),
 	height : 'auto',
 	top : 10,
 	left : 90,
@@ -181,7 +195,7 @@ lblEmail = Titanium.UI.createLabel({
 	textAlign : 'right'
 });
 lblEmailAddress = Titanium.UI.createLabel({
-	text : win.venueEmail,
+	text : win.venueEmail.truncate(28),
 	height : 'auto',
 	top : 10,
 	left : 90,
@@ -269,7 +283,7 @@ lblAddress = Titanium.UI.createLabel({
 	textAlign : 'right'
 });
 lblAddress1 = Titanium.UI.createLabel({
-	text : win.venueAddress1,
+	text : win.venueAddress1.truncate(28),
 	height : 'auto',
 	top : 10,
 	left : 90,
@@ -287,7 +301,7 @@ if(win.venueAddress2 == null) {
 
 } else {
 	lblAddress2 = Titanium.UI.createLabel({
-		text : win.venueAddress2,
+		text : win.venueAddress2.truncate(28),
 		height : 'auto',
 		top : 60,
 		left : 90,
@@ -303,7 +317,7 @@ if(win.venueAddress2 == null) {
 	btnAddress.add(lblAddress2);
 }
 lblCity = Titanium.UI.createLabel({
-	text : win.venueCity,
+	text : win.venueCity.truncate(28),
 	height : 'auto',
 	top : 120,
 	left : 90,
@@ -321,7 +335,7 @@ if(win.venueAddress2 == null) {
 	lblCity.top = 60;
 } else {
 	lblAddress2 = Titanium.UI.createLabel({
-		text : win.venueAddress2,
+		text : win.venueAddress2.truncate(28),
 		height : 'auto',
 		top : 90,
 		left : 90,
@@ -337,7 +351,7 @@ if(win.venueAddress2 == null) {
 	btnAddress.add(lblAddress2);
 }
 lblPostcode = Titanium.UI.createLabel({
-	text : win.venuePostCode,
+	text : win.venuePostCode.truncate(28),
 	height : 'auto',
 	top : 120,
 	left : 90,

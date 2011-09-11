@@ -31,6 +31,19 @@ win = Titanium.UI.currentWindow;
 //Open the db
 db = Titanium.Database.open('knightfinder');
 
+String.prototype.truncate = function(length) {
+
+  if (this.length > length) {
+
+    return this.slice(0, length - 3) + "...";
+
+  } else {
+
+    return this.slice(0, this.length);
+
+  }
+};
+
 if(win.voucherType == 'Saved Venue Deal') {
 	win.title = win.voucherType;
 	getTheVoucher = db.execute('SELECT * FROM vouchers WHERE voucherID =' + win.voucherID);
@@ -66,41 +79,10 @@ lblKFVoucher = Titanium.UI.createLabel({
 	},
 	textAlign : 'left'
 });
-lblInfoSummary = Titanium.UI.createLabel({
-	text : 'Summary:',
-	height : 'auto',
-	top : 45,
-	left : 5,
-	width : 'auto',
-	colour : '#000000',
-	font : {
-		fontSize : 13,
-		fontStyle : 'Arial',
-		fontWeight : 'bold'
-	},
-	textAlign : 'left'
-});
-lblSummary = Titanium.UI.createLabel({
-	text : win.voucherSummary + ' @ ' + win.venueName,
-	height : 'auto',
-	top : 60,
-	left : 5,
-	width : 'auto',
-	colour : '#000000',
-	font : {
-		fontSize : 18,
-		fontStyle : 'Arial',
-		fontWeight : 'bold'
-	},
-	textAlign : 'left'
-});
-if(win.voucherType == 'Saved Venue Deal') {
-	lblSummary.text = unescape(dbSummary) + ' @ ' + unescape(dbVenueName);
-}
 lblInfoDetails = Titanium.UI.createLabel({
 	text : 'Details of deal:',
 	height : 'auto',
-	top : 87,
+	top : 45,
 	left : 5,
 	width : 'auto',
 	colour : '#000000',
@@ -114,7 +96,7 @@ lblInfoDetails = Titanium.UI.createLabel({
 lblDetails = Titanium.UI.createLabel({
 	text : win.voucherDetails,
 	height : 'auto',
-	top : 105,
+	top : 60,
 	left : 5,
 	width : 'auto',
 	colour : '#000000',
@@ -271,4 +253,4 @@ function padwithZero(number) {
 	return testedNumber;
 }
 
-win.add(lblKFVoucher, lblSummary, lblDetails, lblInfoSummary, lblInfoDetails, btnSave, lblInfoExpDate, lblExpDate);
+win.add(lblKFVoucher, lblDetails, lblInfoDetails, btnSave, lblInfoExpDate, lblExpDate);

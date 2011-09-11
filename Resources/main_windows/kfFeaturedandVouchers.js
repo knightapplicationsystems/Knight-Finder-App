@@ -34,7 +34,18 @@ alertMessage = Titanium.UI.createAlertDialog({
 	message: 'Alert Message'
 });
 
+String.prototype.truncate = function(length) {
 
+  if (this.length > length) {
+
+    return this.slice(0, length - 3) + "...";
+
+  } else {
+
+    return this.slice(0, this.length);
+
+  }
+};
 
 //Open the db
 db = Titanium.Database.open('knightfinder');
