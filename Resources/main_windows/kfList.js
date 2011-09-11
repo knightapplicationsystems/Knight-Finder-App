@@ -205,12 +205,12 @@ function geoResp(e) {
 	//Keep trying to get a location
 	initialGeoReceived = true;
 	
-	/*
+	
 	if (initialGeoReceived) {
 		Titanium.Geolocation.removeEventListener('location',geoResp);
 		return;
 	}
-	*/
+	
 
 	url = env + "/api/venues?loc=" + geoLat + "," + geoLong + "&limit=" + 50;
 	
