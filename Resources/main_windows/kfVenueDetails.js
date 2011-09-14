@@ -150,7 +150,7 @@ lblWebAddress = Titanium.UI.createLabel({
 });
 btnWebAddress.add(lblWeb, lblWebAddress);
 
-if(lblWebAddress.text == null) {
+if(lblWebAddress.text == 'None') {
 	lblWebAddress.text = 'None';
 } else {
 	btnWebAddress.addEventListener('click', function(e) {
@@ -210,7 +210,7 @@ lblEmailAddress = Titanium.UI.createLabel({
 });
 
 btnEmail.add(lblEmail, lblEmailAddress);
-if(lblEmailAddress.text == null) {
+if(lblEmailAddress.text == 'None') {
 	lblEmailAddress.text = 'None';
 } else {
 	btnEmail.addEventListener('click', function(e) {

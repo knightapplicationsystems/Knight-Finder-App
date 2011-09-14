@@ -433,6 +433,16 @@ Titanium.API.info('Am I dead?');
 		var venueLat = venues[e.index].venue.latitude;
 		var venueEmail = venues[e.index].venue.email;
 		var venueWeb = venues[e.index].venue.url;
+		
+		if (venueWeb == null)
+		{
+			venueWeb = 'None';
+		}
+		
+		if (venueEmail == null)
+		{
+			venueEmail = 'None';
+		}
 
 		venueDetails.venueName = venueName;
 		venueDetails.venueAddress1 = venueAddress1;
