@@ -7,7 +7,11 @@
 #define _QUOTEME(x) #x
 #define STRING(x) _QUOTEME(x)
 
+<<<<<<< HEAD
 NSString * const TI_APPLICATION_DEPLOYTYPE = @"test";
+=======
+NSString * const TI_APPLICATION_DEPLOYTYPE = @"development";
+>>>>>>> KnightFinderVersion2.1.0
 NSString * const TI_APPLICATION_ID = @"com.knightfinderapp";
 NSString * const TI_APPLICATION_PUBLISHER = @"Knight Application Systems";
 NSString * const TI_APPLICATION_URL = @"http://www.knightfinderapp.com";
@@ -19,7 +23,7 @@ NSString * const TI_APPLICATION_GUID = @"76f1037c-f371-4982-925c-514695f2e21d";
 BOOL const TI_APPLICATION_ANALYTICS = true;
 
 #ifdef TARGET_IPHONE_SIMULATOR
-NSString * const TI_APPLICATION_RESOURCE_DIR = @"";
+NSString * const TI_APPLICATION_RESOURCE_DIR = @"/Users/thesargenator/Titanium/KnightFinder/Resources";
 #endif
 
 int main(int argc, char *argv[]) {

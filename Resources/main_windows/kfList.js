@@ -159,7 +159,7 @@ failureMessage = Titanium.UI.createAlertDialog({
 	message: 'Failure Message'
 });
 
-prepareGeo();
+//prepareGeo();
 
 //This function prepares geolocation within Knight Finder
 function prepareGeo() {
@@ -171,27 +171,27 @@ function prepareGeo() {
 	Titanium.Geolocation.addEventListener('location', geoResp);
 }
 
-//geoResp();
+geoResp();
 //Function is executed when succesful geo reponse comes back
 function geoResp(e) {
 
 	Ti.API.info('GeoLocation Response received');
 
-	
+	/*
 	if (!e.success) {
 		failureMessage.message = "An Error has occured whilst trying to determine your location, please try and refresh, and make sure you have sufficient mobile signal";
 		failureMessage.show();
 		return;
 	}
-	
+	*/
 
 	Ti.API.info("Geo Success");
 
 	// Set the global long/lat
-	geoLong = e.coords.longitude;
-	geoLat = e.coords.latitude;
-	//geoLong = -0.0244;
-	//geoLat = 50.80650;
+	//geoLong = e.coords.longitude;
+	//geoLat = e.coords.latitude;
+	geoLong = -0.0244;
+	geoLat = 50.80650;
 	//geoLong = -0.142;
 	//geoLat = 51.4671;
 	
@@ -326,6 +326,7 @@ Titanium.API.info('Am I dead?');
 
 		return;
 	}
+	
 
 	for (var i in venues) {
 		Ti.API.info("Parsing Venue");
@@ -431,7 +432,6 @@ Titanium.API.info('Am I dead?');
 		var venueID = venues[e.index].venue.id
 		var venueLong = venues[e.index].venue.longitude;
 		var venueLat = venues[e.index].venue.latitude;
-		var venueEmail = venues[e.index].venue.email;
 		var venueWeb = venues[e.index].venue.url;
 		
 		if (venueWeb == null)
@@ -453,7 +453,6 @@ Titanium.API.info('Am I dead?');
 		venueDetails.venueID = venueID;
 		venueDetails.venueLong = venueLong;
 		venueDetails.venueLat = venueLat;
-		venueDetails.venueEmail = venueEmail;
 		venueDetails.venueWeb = venueWeb;
 
 		Titanium.UI.currentTab.open(venueDetails, {

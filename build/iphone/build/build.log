@@ -5,7 +5,11 @@ reporting an issue to help us understand your environment, build settings
 and aid in debugging. Please attach this log to any issue that you report.
 ================================================================================
 
+<<<<<<< HEAD
 Starting build at 09/14/11 20:11
+=======
+Starting build at 09/18/11 21:16
+>>>>>>> KnightFinderVersion2.1.0
 
 Build details:
 
@@ -16,22 +20,31 @@ Build details:
 
 Script arguments:
    /Users/thesargenator/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/iphone/builder.py
+<<<<<<< HEAD
    install
+=======
+   simulator
+>>>>>>> KnightFinderVersion2.1.0
    4.3
    /Users/thesargenator/Titanium/KnightFinder
    com.knightfinderapp
    KnightFinder
+<<<<<<< HEAD
    71744FE1-3E38-483D-A852-C12963636AE8
    Justin Howard (3SNXK4SG98)
+=======
+>>>>>>> KnightFinderVersion2.1.0
    iphone
+   iphone
+   
 
 Building from: /Users/thesargenator/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/iphone
 Platform: Darwin Kernel Version 11.1.0: Tue Jul 26 16:07:11 PDT 2011; root:xnu-1699.22.81~1/RELEASE_X86_64
 
 Xcode path is: /Developer
 
-Reading provisioning profile:
 
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -119,10 +132,21 @@ Reading provisioning profile:
 	<integer>1</integer>
 </dict>
 </plist>
+=======
+githash=97c3689, existing_git_hash=97c3689
+writing contents of /Users/thesargenator/Titanium/KnightFinder/build/iphone/project.xcconfig:
 
-githash=97c3689, existing_git_hash=None
-forcing rebuild since libhash (None) not matching (b1b8b21fe7f2a50eabcaacbb1edebc4e)
-Performing full rebuild
+TI_VERSION=1.7.2
+TI_SDK_DIR=/Users/thesargenator/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone
+TI_APPID=com.knightfinderapp
+OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) -weak_framework iAd
+OTHER_LDFLAGS[sdk=iphonesimulator*]=$(inherited) -weak_framework iAd
+#include "module"
+
+old contents
+
+>>>>>>> KnightFinderVersion2.1.0
+
 Generated the following stylecode code:
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -155,6 +179,7 @@ Generated the following stylecode code:
 
 	</dict>
 </plist>
+<<<<<<< HEAD
 Performing clean build...
 
 File listing for /Users/thesargenator/Titanium/KnightFinder
@@ -8916,4 +8941,6 @@ CodeSign build/Debug-iphoneos/KnightFinder.app
 + After executing the command: open -b com.apple.itunes "/Users/thesargenator/Titanium/KnightFinder/build/iphone/build/Debug-iphoneos/KnightFinder.ipa"
 + Executing the command: osascript "/Users/thesargenator/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/iphone/itunes_sync.scpt"
 + After executing the command: osascript "/Users/thesargenator/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/iphone/itunes_sync.scpt"
+=======
+>>>>>>> KnightFinderVersion2.1.0
 Finishing build
