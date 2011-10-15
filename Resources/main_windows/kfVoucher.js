@@ -55,6 +55,7 @@ if(win.voucherType == 'Saved Venue Deal') {
 	win.title = win.voucherType + ' voucher';
 }
 win.backgroundColor = 'stripped';
+
 //Knight Finder standard Alert Messages
 alertMessage = Titanium.UI.createAlertDialog({
 	title : 'Knight Finder',
