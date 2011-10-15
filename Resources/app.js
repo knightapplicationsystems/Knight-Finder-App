@@ -21,11 +21,11 @@ if (Titanium.Platform.name == 'android') {
 if (!Ti.Network.online) {
 	var networkError = Titanium.UI.createAlertDialog({
 		title: 'Knight Finder',
-		message: 'You must have a WiFi or Celluar Network Connection to use this application'
+		message: 'You must have a WiFi or Celluar Network Connection to get Venue Information'
 
 	});
 	networkError.show();
-} else {
+}
 
 	if (isAndroid == true) {
 		Ti.API.info('Is this cheese? Yeeeeees');
@@ -62,4 +62,3 @@ if (!Ti.Network.online) {
 	tabGroup.addTab(tab1);
 
 	tabGroup.open();
-}

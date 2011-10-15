@@ -33,17 +33,16 @@ db = Titanium.Database.open('knightfinder');
 
 String.prototype.truncate = function(length) {
 
-  if (this.length > length) {
+	if(this.length > length) {
 
-    return this.slice(0, length - 3) + "...";
+		return this.slice(0, length - 3) + "...";
 
-  } else {
+	} else {
 
-    return this.slice(0, this.length);
+		return this.slice(0, this.length);
 
-  }
+	}
 };
-
 if(win.voucherType == 'Saved Venue Deal') {
 	win.title = win.voucherType;
 	getTheVoucher = db.execute('SELECT * FROM vouchers WHERE voucherID =' + win.voucherID);
@@ -161,7 +160,7 @@ lblExpDate = Titanium.UI.createLabel({
 });
 
 if(win.voucherType == 'Saved Venue Deal') {
-	
+
 	var voucherDate = dbExpiry;
 	var temp = voucherDate.split("T");
 
@@ -176,7 +175,7 @@ if(win.voucherType == 'Saved Venue Deal') {
 	theDate.setHours(eventTime[0], eventTime[1], 0, 0);
 	dateString = padwithZero(theDate.getDate()) + "/" + padwithZero(theDate.getMonth() + 1) + "/" + padwithZero(theDate.getFullYear()) + " " + padwithZero(theDate.getHours()) + ":" + padwithZero(theDate.getMinutes());
 	Ti.API.info("Parsed date: " + theDate + ". Date String: " + dateString);
-	
+
 	lblExpDate.text = dateString;
 
 }
@@ -201,46 +200,62 @@ if(win.voucherType == 'Saved Venue Deal') {
 
 btnSave.addEventListener('click', function(e) {
 
-	var row = db.execute('SELECT * FROM vouchers ORDER BY voucherID DESC');
 
-	if(row.field(0) == null) {
-		voucherID = 1;
 
-	} else {
-		voucherID = row.field(0);
-		voucherID = voucherID + 1;
+		var checkSaved = db.execute("SELECT * FROM vouchers WHERE venueID = " + win.dealID + " AND expiry_date = '" + win.voucherExpDate + "'");
 
-	}
+		if(checkSaved.field(0) == null) {
 
-	var acceptKFConditions = Titanium.UI.createAlertDialog({
-		title : 'Knight Finder',
-		message : 'By clicking accept you are agreeing to the following conditions: \n This deal can be withdrawn by Knight Finder or ' + win.venueName + ' at any time without prior notice',
-		buttonNames : ['Accept', 'No']
-	});
-	acceptKFConditions.show();
+			var row = db.execute('SELECT * FROM vouchers ORDER BY voucherID DESC');
 
-	acceptKFConditions.addEventListener('click', function(e) {
-		if(e.index == 0) {
+			if(row.field(0) == null) {
+				voucherID = 1;
 
-			try {
-				var xhr = Titanium.Network.createHTTPClient();
-				url = env + "/api/venue/" + win.venueID + "/deals/" + win.dealID + "/log";
-				Ti.API.warn(url);
-				xhr.open("GET", url);
-				xhr.send();
+			} else {
+				voucherID = row.field(0);
+				voucherID = voucherID + 1;
 
-			} catch(e) {
-				Ti.API.warn(e);
 			}
-			var sql = ("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "','" + win.venueName + "')");
-			//alertMessage.message = sql;
-			//alertMessage.show();
-			db.execute("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "','" + win.venueName + "')");
-			alertMessage.message = 'Your Voucher has been saved';
-			alertMessage.show();
+
+			var acceptKFConditions = Titanium.UI.createAlertDialog({
+				title : 'Knight Finder',
+				message : 'By clicking accept you are agreeing to the following conditions: \n This deal can be withdrawn by Knight Finder or ' + win.venueName + ' at any time without prior notice',
+				buttonNames : ['Accept', 'No']
+			});
+			acceptKFConditions.show();
+
+			acceptKFConditions.addEventListener('click', function(e) {
+				if(e.index == 0) {
+
+					try {
+						var xhr = Titanium.Network.createHTTPClient();
+						url = env + "/api/venue/" + win.venueID + "/deals/" + win.dealID + "/log";
+						Ti.API.warn(url);
+						xhr.open("GET", url);
+						xhr.send();
+
+					} catch(e) {
+						Ti.API.warn(e);
+					}
+					//var sql = ("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "','" + win.venueName + "')");
+					//alertMessage.message = sql;
+					//alertMessage.show();
+					db.execute("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName,venueID) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "','" + win.venueName + "'," + win.dealID + ")");
+					alertMessage.message = 'Your Voucher has been saved';
+					alertMessage.show();
+					win.close();
+				}
+			});
+		} else {
+			var alreadySaved = Titanium.UI.createAlertDialog({
+				title : 'Knight Finder',
+				message : 'You have already Saved this voucher'
+			});
+			alreadySaved.show();
 			win.close();
 		}
-	});
+	 
+
 });
 //This is part of the date adjustment
 function padwithZero(number) {

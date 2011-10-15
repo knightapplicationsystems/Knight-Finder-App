@@ -34,6 +34,14 @@ var activityWindow
 var activityBg;
 var updating = false;
 lastDistance = 0;
+//Date stuff
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var minutes = currentTime.getMinutes();
+var year = currentTime.getFullYear();
+var month = currentTime.getMonth() + 1;
+var day = currentTime.getDate();
+var currentDate;
 
 
 //Window Loading section
@@ -51,7 +59,10 @@ db = Titanium.Database.open('knightfinder');
 db.execute('CREATE TABLE IF NOT EXISTS dbVersion (versionID)');
 db.execute('CREATE TABLE IF NOT EXISTS review (response,count)');
 db.execute('CREATE TABLE IF NOT EXISTS vouchers (voucherID, details, summary, date_added, expiry_date, venueID,venueName)');
-db.execute("INSERT INTO dbVersion (versionID) VALUES ('2.0.2')");
+db.execute("INSERT INTO dbVersion (versionID) VALUES ('2.0.3')");
+
+///api/appversion
+
 
 var navActInd = Titanium.UI.createActivityIndicator();
 win.setRightNavButton(navActInd);
@@ -159,7 +170,7 @@ failureMessage = Titanium.UI.createAlertDialog({
 	message: 'Failure Message'
 });
 
-//prepareGeo();
+prepareGeo();
 
 //This function prepares geolocation within Knight Finder
 function prepareGeo() {
@@ -171,27 +182,27 @@ function prepareGeo() {
 	Titanium.Geolocation.addEventListener('location', geoResp);
 }
 
-geoResp();
+//geoResp();
 //Function is executed when succesful geo reponse comes back
 function geoResp(e) {
 
 	Ti.API.info('GeoLocation Response received');
 
-	/*
+	
 	if (!e.success) {
-		failureMessage.message = "An Error has occured whilst trying to determine your location, please try and refresh, and make sure you have sufficient mobile signal";
+		failureMessage.message = "An Error has occured whilst trying to determine your location, please refresh, and make sure you have sufficient mobile signal";
 		failureMessage.show();
 		return;
 	}
-	*/
+	
 
 	Ti.API.info("Geo Success");
 
 	// Set the global long/lat
-	//geoLong = e.coords.longitude;
-	//geoLat = e.coords.latitude;
-	geoLong = -0.0244;
-	geoLat = 50.80650;
+	geoLong = e.coords.longitude;
+	geoLat = e.coords.latitude;
+	//geoLong = -0.0244;
+	//geoLat = 50.80650;
 	//geoLong = -0.142;
 	//geoLat = 51.4671;
 	
@@ -205,12 +216,12 @@ function geoResp(e) {
 	//Keep trying to get a location
 	initialGeoReceived = true;
 	
-	/*
+	
 	if (initialGeoReceived) {
 		Titanium.Geolocation.removeEventListener('location',geoResp);
 		return;
 	}
-	*/
+	
 
 	url = env + "/api/venues?loc=" + geoLat + "," + geoLong + "&limit=" + 50;
 	
@@ -301,7 +312,16 @@ function callService() {
 }
 
 function serviceResponse() {
-Titanium.API.info('Am I dead?');
+	
+	currentDate = padwithZero(year) + '-' + padwithZero(month) + '-' + padwithZero(day) + 'T' + padwithZero(hours) + ':' + padwithZero(minutes) + ':00';
+
+	if (currentDate < '2011-11-06T04:00:00')
+	{
+		alertMessage.message = '5TH NOVEMBER BRANDON BLOCK @ H BAR & CLUB, HOVE - SEE H BAR DEALS TO GET EXCLUSIVE ENTRY WITH KNIGHT FINDER';
+		alertMessage.show();
+	}
+	
+	Titanium.API.info('Am I dead?');
 
 	Ti.API.info(this.responseText);
 
@@ -525,4 +545,16 @@ function endUpdate() {
 	}
 	
 	
+}
+
+//This is part of the date adjustment
+function padwithZero(number) {
+
+	var testedNumber = number + "";
+
+	if(testedNumber.length == 1) {
+		return "0" + testedNumber;
+	}
+
+	return testedNumber;
 }

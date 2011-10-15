@@ -125,6 +125,20 @@ function showMap() {
 					var venuePhone = venues[evt.annotation.myid].venue.phone;
 					var venueEmail = venues[evt.annotation.myid].venue.email;
 					var venueID = venues[evt.annotation.myid].venue.id
+					var venueLong = venues[evt.annotation.myid].venue.longitude;
+					var venueLat = venues[evt.annotation.myid].venue.latitude;
+					var venueWeb = venues[evt.annotation.myid].venue.url;
+					
+							if (venueWeb == null)
+							{
+								venueWeb = 'None';
+							}
+							
+							if (venueEmail == null)
+							{
+								venueEmail = 'None';
+							}
+
 					
 					venueWin.venueName = venueName;
 					venueWin.venueAddress1 = venueAddress1;
@@ -133,6 +147,9 @@ function showMap() {
 					venueWin.venuePhone = venuePhone;
 					venueWin.venueEmail = venueEmail;
 					venueWin.venueID = venueID;
+					venueWin.venueLong = venueLong;
+					venueWin.venueLat = venueLat;
+					venueWin.venueWeb = venueWeb;
 
 					Titanium.UI.currentTab.open(venueWin,{animated:true});
 				}

@@ -98,7 +98,7 @@ function reloadThings() {
 			});
 
 			var voucherName = Ti.UI.createLabel({
-				text: unescape(rowVouchers.field(2)),
+				text: unescape(rowVouchers.field(6)) + ' ' + unescape(rowVouchers.field(2)),
 				color: '#3D3D3D',
 				textAlign:'left',
 				left:10,
@@ -108,9 +108,9 @@ function reloadThings() {
 					fontSize:13
 				}
 			});
-			
 
 			row.add(voucherName);
+
 
 			voucherIdRowData[i] = rowVouchers.field(0);
 			tableData[i] = row;

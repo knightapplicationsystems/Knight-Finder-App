@@ -264,7 +264,7 @@ btnPhoneNumber = Titanium.UI.createButton({
 btnPhoneNumber.add(lblPhone, lblPhoneNumber);
 
 btnPhoneNumber.addEventListener('click', function(e) {
-	Ti.Platform.openURL('tel:' + win.venuePhone);
+	Ti.Platform.openURL('tel:' + '+' + win.venuePhone);
 });
 //Venue Address
 lblAddress = Titanium.UI.createLabel({

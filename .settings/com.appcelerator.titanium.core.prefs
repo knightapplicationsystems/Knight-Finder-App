@@ -1,9 +1,13 @@
-#Sun Sep 11 16:38:42 BST 2011
+#Sat Oct 15 15:06:36 BST 2011
 eclipse.preferences.version=1
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/appid=*
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/filepath=/Users/thesargenator/Downloads/Team_Provisioning_Profile_ (1).mobileprovision
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/name=Team Provisioning Profile\: *
 provisioning_profiles/development/71744FE1-3E38-483D-A852-C12963636AE8/uuid=71744FE1-3E38-483D-A852-C12963636AE8
+provisioning_profiles/development/7DBD5A95-EA3C-42DC-B0D1-C986902846C8/appid=*
+provisioning_profiles/development/7DBD5A95-EA3C-42DC-B0D1-C986902846C8/filepath=/Users/thesargenator/Downloads/iOS_Team_Provisioning_Profile_.mobileprovision
+provisioning_profiles/development/7DBD5A95-EA3C-42DC-B0D1-C986902846C8/name=iOS Team Provisioning Profile\: *
+provisioning_profiles/development/7DBD5A95-EA3C-42DC-B0D1-C986902846C8/uuid=7DBD5A95-EA3C-42DC-B0D1-C986902846C8
 provisioning_profiles/distribution/1CD4AD4A-61D5-41B5-BEF8-566CF45031CC/appid=com.knightfinderapp
 provisioning_profiles/distribution/1CD4AD4A-61D5-41B5-BEF8-566CF45031CC/filepath=/Users/thesargenator/Downloads/Knight_Finder_Production.mobileprovision
 provisioning_profiles/distribution/1CD4AD4A-61D5-41B5-BEF8-566CF45031CC/name=Knight Finder Production
