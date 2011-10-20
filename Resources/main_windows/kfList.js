@@ -55,12 +55,19 @@ win.backgroundColor = 'stripped';
 var db;
 //DB Load Events
 db = Titanium.Database.open('knightfinder');
-
+Ti.API.warn('DB OPEN');
 db.execute('CREATE TABLE IF NOT EXISTS dbVersion (versionID)');
 db.execute('CREATE TABLE IF NOT EXISTS review (response,count)');
 db.execute('CREATE TABLE IF NOT EXISTS vouchers (voucherID, details, summary, date_added, expiry_date, venueID,venueName)');
-db.execute("INSERT INTO dbVersion (versionID) VALUES ('2.0.3')");
-
+var checkVersion = db.execute("SELECT * FROM dbVersion");
+if (checkVersion.field(0) == null)
+{
+	db.execute("INSERT INTO dbVersion (versionID) VALUES ('2.0.3')");
+	db.close();
+	Ti.API.warn('DB CLOSED');
+}
+db.close();
+Ti.API.warn('DB CLOSED');
 ///api/appversion
 
 
@@ -68,22 +75,29 @@ var navActInd = Titanium.UI.createActivityIndicator();
 win.setRightNavButton(navActInd);
 
 function willYouReview() {
+	db = Titanium.Database.open('knightfinder');
+	Ti.API.warn('DB OPEN');
 	var rows = db.execute('SELECT * FROM review');
 	Titanium.API.info(rows.field(0));
 	if (rows.field(1) == null) {
 		db.execute("INSERT INTO review (response,count) VALUES ('yes',1)");
+
 	}
 	Ti.API.info('what' + rows.field(1));
 
 	if (rows.field(1) == '1') {
 		var countUpdate = rows.field(1);
 		countUpdate = countUpdate + 1;
-		db.execute('UPDATE review SET count = ' + countUpdate)
+		db.execute('UPDATE review SET count = ' + countUpdate);
+		//db.close();
+		//Ti.API.warn('DB CLOSED');
 		Ti.API.info('This should fire when new only' +countUpdate);
 	} else {
 		var countUpdate = rows.field(1);
 		countUpdate = countUpdate + 1;
-		db.execute('UPDATE review SET count = ' + countUpdate)
+		db.execute('UPDATE review SET count = ' + countUpdate);
+		//db.close();
+		//Ti.API.warn('DB CLOSED');
 		Ti.API.info(countUpdate);
 	}
 
@@ -99,11 +113,16 @@ function willYouReview() {
 			if (e.index == 0) {
 				Titanium.Platform.openURL('http://itunes.apple.com/gb/app/knight-finder/id408243712?mt=8');
 			} else {
+				//db = Titanium.Database.open('knightfinder');
 				db.execute("UPDATE review SET response = 'no'");
+				db.close();
+				Ti.API.warn('DB CLOSED');
 			}
 		});
 	}
-
+	
+		db.close();
+		Ti.API.warn('DB CLOSED');
 }
 
 willYouReview();
@@ -195,7 +214,6 @@ function geoResp(e) {
 		return;
 	}
 	
-
 	Ti.API.info("Geo Success");
 
 	// Set the global long/lat
@@ -205,28 +223,19 @@ function geoResp(e) {
 	//geoLat = 50.80650;
 	//geoLong = -0.142;
 	//geoLat = 51.4671;
-	
-	
 
-
-	// Show the map, as we now have lat/long
-	//if (!initialGeoReceived) {
-
-	//}
 	//Keep trying to get a location
 	initialGeoReceived = true;
 	
 	
 	if (initialGeoReceived) {
 		Titanium.Geolocation.removeEventListener('location',geoResp);
-		return;
+		//return;
 	}
 	
 
 	url = env + "/api/venues?loc=" + geoLat + "," + geoLong + "&limit=" + 50;
 	
-	//alertMessage.message = url;
-	//alertMessage.show();
 	//Test URL
 	//url = env + "/api/timeout_test";
 	
@@ -474,7 +483,6 @@ function serviceResponse() {
 		venueDetails.venueLong = venueLong;
 		venueDetails.venueLat = venueLat;
 		venueDetails.venueWeb = venueWeb;
-
 		Titanium.UI.currentTab.open(venueDetails, {
 			animated:true
 		});

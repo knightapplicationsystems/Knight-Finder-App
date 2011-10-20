@@ -7,6 +7,7 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 #import "KrollCallback.h"
+#import "KrollBridge.h"
 #import "KrollObject.h"
 
 static NSMutableArray * callbacks;
@@ -48,6 +49,7 @@ static NSLock *callbackLock;
 	if (self = [super init])
 	{
 		context = context_;
+		bridge = (KrollBridge *)[context_ delegate];
 		jsContext = [context context];
 		function = TiValueToObject(jsContext,function_,NULL);
 		thisObj = thisObject_;
@@ -67,19 +69,21 @@ static NSLock *callbackLock;
 
 	[type release];
 	[contextLock release];
-	if ([context isKJSThread])
+	if ([KrollBridge krollBridgeExists:bridge])
 	{
-		TiValueUnprotect(jsContext, function);
-		TiValueUnprotect(jsContext, thisObj);
+		if ([context isKJSThread])
+		{
+			TiValueUnprotect(jsContext, function);
+			TiValueUnprotect(jsContext, thisObj);
+		}
+		else
+		{
+			KrollUnprotectOperation * delayedUnprotect = [[KrollUnprotectOperation alloc]
+					initWithContext:jsContext withJsobject:function andJsobject:thisObj];
+			[context enqueue:delayedUnprotect];
+			[delayedUnprotect release];
+		}
 	}
-	else
-	{
-		KrollUnprotectOperation * delayedUnprotect = [[KrollUnprotectOperation alloc]
-				initWithContext:jsContext withJsobject:function andJsobject:thisObj];
-		[context enqueue:delayedUnprotect];
-		[delayedUnprotect release];
-	}
-
 	function = NULL;
 	thisObj = NULL;
 	context = NULL;

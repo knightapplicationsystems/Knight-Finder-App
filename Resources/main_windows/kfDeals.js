@@ -163,10 +163,10 @@ function serviceResponse() {
 			voucherWin.venueName = win.venueName;
 			voucherWin.venueID = venueID;
 			voucherWin.dealID = dealID;
-
 			Titanium.UI.currentTab.open(voucherWin, {
 				animated : true
 			});
+			
 		});
 	}
 	hideIndicator();

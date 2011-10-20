@@ -58,7 +58,6 @@ function reloadThings() {
 	//var sql = ("SELECT * FROM vouchers WHERE expiry_date >'" + currentDate +  "' ORDER BY voucherID DESC");
 
 	rowVouchers = db.execute("SELECT * FROM vouchers WHERE expiry_date >'" + currentDate +  "' ORDER BY voucherID DESC");
-	
 	//alertMessage.message = sql;
 	//alertMessage.show();
 

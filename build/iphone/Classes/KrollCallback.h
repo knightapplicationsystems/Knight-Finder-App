@@ -10,6 +10,7 @@
 #import "TiCore.h"
 #import "KrollContext.h"
 
+@class KrollBridge;
 //
 // KrollCallback is a wrapper around a JS function object which is passed
 // from JS land to native.  This object can be passed around on the native
@@ -22,6 +23,7 @@
 	TiObjectRef thisObj;
 	TiObjectRef function;
 	KrollContext *context;
+	KrollBridge * bridge;
 	NSLock* contextLock;
 	NSString *type;
 }

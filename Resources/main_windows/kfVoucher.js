@@ -203,7 +203,6 @@ btnSave.addEventListener('click', function(e) {
 
 
 		var checkSaved = db.execute("SELECT * FROM vouchers WHERE venueID = " + win.dealID + " AND expiry_date = '" + win.voucherExpDate + "'");
-
 		if(checkSaved.field(0) == null) {
 
 			var row = db.execute('SELECT * FROM vouchers ORDER BY voucherID DESC');
@@ -216,7 +215,7 @@ btnSave.addEventListener('click', function(e) {
 				voucherID = voucherID + 1;
 
 			}
-
+			
 			var acceptKFConditions = Titanium.UI.createAlertDialog({
 				title : 'Knight Finder',
 				message : 'By clicking accept you are agreeing to the following conditions: \n This deal can be withdrawn by Knight Finder or ' + win.venueName + ' at any time without prior notice',
@@ -226,6 +225,7 @@ btnSave.addEventListener('click', function(e) {
 
 			acceptKFConditions.addEventListener('click', function(e) {
 				if(e.index == 0) {
+					db.close();
 
 					try {
 						var xhr = Titanium.Network.createHTTPClient();
@@ -240,7 +240,10 @@ btnSave.addEventListener('click', function(e) {
 					//var sql = ("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "','" + win.venueName + "')");
 					//alertMessage.message = sql;
 					//alertMessage.show();
-					db.execute("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueName,venueID) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "','" + win.venueName + "'," + win.dealID + ")");
+
+						db = Titanium.Database.open('knightfinder');
+						db.execute("INSERT INTO vouchers (voucherID, details, summary,expiry_date,venueID,venueName) VALUES (" + voucherID + ",'" + escape(win.voucherDetails) + "','" + escape(win.voucherSummary) + "','" + win.voucherExpDate + "'," + win.dealID + ",'" + win.venueName + "')");
+
 					alertMessage.message = 'Your Voucher has been saved';
 					alertMessage.show();
 					win.close();
